@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "veritas-report"
+version = "1.0.0"
+description = "Weekly business reporting where an LLM writes the prose and a deterministic validator binds every number to a computed fact"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+keywords = ["analytics", "llm", "validation", "reporting", "statistics"]
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Office/Business :: Financial :: Spreadsheet",
+]
+# No runtime dependencies: the pipeline, the demo and the tests use the standard
+# library only. The Anthropic client below is needed only to write reports with a
+# real model instead of the deterministic mock.
+dependencies = []
+
+[project.optional-dependencies]
+anthropic = ["anthropic>=0.40"]
+
+[project.scripts]
+veritas = "veritas.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["veritas*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

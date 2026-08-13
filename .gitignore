@@ -1,0 +1,21 @@
+# Build products of a run: regenerate with `make demo`.
+out/
+data/
+archive/
+
+# Secrets and local environment
+.env
+.env.*
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.coverage

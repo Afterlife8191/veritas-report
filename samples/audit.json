@@ -1,0 +1,2984 @@
+{
+  "as_of": "2026-08-13",
+  "claims": [
+    {
+      "claim_index": 0,
+      "claimed_value": 0.0,
+      "computed_value": 0.0,
+      "derivation": [
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/channel=display_ads/complete_week:2026-08-08/value",
+          "flags": [
+            "zero_filled"
+          ],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-08-02..2026-08-08"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "$0",
+      "fact_id": "gmv/channel=display_ads/complete_week:2026-08-08/value",
+      "fact_label": "GMV | channel=display_ads | week ending 2026-08-08 | value",
+      "highlight_index": 0,
+      "highlight_title": "channel=display_ads stopped trading",
+      "metric_id": "gmv",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.5,
+      "unit": "usd"
+    },
+    {
+      "claim_index": 1,
+      "claimed_value": 45089.280000000006,
+      "computed_value": 45089.280000000006,
+      "derivation": [
+        {
+          "computation": "baseline_mean",
+          "fact_id": "gmv/channel=display_ads/complete_week:2026-08-08/baseline_mean",
+          "flags": [],
+          "formula": "mean of the 4 prior complete weeks",
+          "inputs": [
+            "gmv/channel=display_ads/complete_week:2026-08-01/value",
+            "gmv/channel=display_ads/complete_week:2026-07-25/value",
+            "gmv/channel=display_ads/complete_week:2026-07-18/value",
+            "gmv/channel=display_ads/complete_week:2026-07-11/value"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/channel=display_ads/complete_week:2026-08-01/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-07-26..2026-08-01"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/channel=display_ads/complete_week:2026-07-25/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-07-19..2026-07-25"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/channel=display_ads/complete_week:2026-07-18/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-07-12..2026-07-18"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/channel=display_ads/complete_week:2026-07-11/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-07-05..2026-07-11"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "$45,089",
+      "fact_id": "gmv/channel=display_ads/complete_week:2026-08-08/baseline_mean",
+      "fact_label": "GMV | channel=display_ads | week ending 2026-08-08 | mean of the trailing 4-week baseline",
+      "highlight_index": 0,
+      "highlight_title": "channel=display_ads stopped trading",
+      "metric_id": "gmv",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.5,
+      "unit": "usd"
+    },
+    {
+      "claim_index": 0,
+      "claimed_value": 43446.7,
+      "computed_value": 43446.7,
+      "derivation": [
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/channel=marketplace/complete_week:2026-08-08/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-08-02..2026-08-08"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "$43,447",
+      "fact_id": "gmv/channel=marketplace/complete_week:2026-08-08/value",
+      "fact_label": "GMV | channel=marketplace | week ending 2026-08-08 | value",
+      "highlight_index": 1,
+      "highlight_title": "channel=marketplace appeared for the first time",
+      "metric_id": "gmv",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.5,
+      "unit": "usd"
+    },
+    {
+      "claim_index": 0,
+      "claimed_value": 458959.37999999995,
+      "computed_value": 458959.37999999995,
+      "derivation": [
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/overall/daily:2026-08-05/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-08-05"
+          ],
+          "note": ""
+        }
+      ],
+      "display": "$458,959",
+      "fact_id": "gmv/overall/daily:2026-08-05/value",
+      "fact_label": "GMV | overall | day 2026-08-05 | value",
+      "highlight_index": 2,
+      "highlight_title": "Single-day spike in GMV for overall",
+      "metric_id": "gmv",
+      "period": {
+        "end": "2026-08-05",
+        "start": "2026-08-05",
+        "type": "daily"
+      },
+      "status": "bound",
+      "tolerance": 0.5,
+      "unit": "usd"
+    },
+    {
+      "claim_index": 1,
+      "claimed_value": 37.68927350629918,
+      "computed_value": 37.68927350629918,
+      "derivation": [
+        {
+          "computation": "robust_score",
+          "fact_id": "gmv/overall/daily:2026-08-05/robust_score",
+          "flags": [
+            "scale_floored"
+          ],
+          "formula": "(value - weekday_median) / robust_scale",
+          "inputs": [
+            "gmv/overall/daily:2026-08-05/value",
+            "gmv/overall/daily:2026-07-29/value",
+            "gmv/overall/daily:2026-07-22/value",
+            "gmv/overall/daily:2026-07-15/value",
+            "gmv/overall/daily:2026-07-08/value",
+            "gmv/overall/daily:2026-07-01/value",
+            "gmv/overall/daily:2026-06-24/value",
+            "gmv/overall/daily:2026-06-17/value",
+            "gmv/overall/daily:2026-06-10/value"
+          ],
+          "note": "same-weekday baseline; unscored when the baseline is all zero"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/overall/daily:2026-08-05/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-08-05"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/overall/daily:2026-07-29/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-07-29"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/overall/daily:2026-07-22/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-07-22"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/overall/daily:2026-07-15/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-07-15"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/overall/daily:2026-07-08/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-07-08"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/overall/daily:2026-07-01/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-07-01"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/overall/daily:2026-06-24/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-06-24"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/overall/daily:2026-06-17/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-06-17"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/overall/daily:2026-06-10/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-06-10"
+          ],
+          "note": ""
+        }
+      ],
+      "display": "37.69",
+      "fact_id": "gmv/overall/daily:2026-08-05/robust_score",
+      "fact_label": "GMV | overall | day 2026-08-05 | robust score vs same-weekday baseline",
+      "highlight_index": 2,
+      "highlight_title": "Single-day spike in GMV for overall",
+      "metric_id": "gmv",
+      "period": {
+        "end": "2026-08-05",
+        "start": "2026-08-05",
+        "type": "daily"
+      },
+      "status": "bound",
+      "tolerance": 0.005,
+      "unit": "score"
+    },
+    {
+      "claim_index": 2,
+      "claimed_value": 333329.79999999993,
+      "computed_value": 333329.79999999993,
+      "derivation": [
+        {
+          "computation": "weekday_median",
+          "fact_id": "gmv/overall/daily:2026-08-05/weekday_median",
+          "flags": [
+            "scale_floored"
+          ],
+          "formula": "median of the 8 prior same-weekday values",
+          "inputs": [
+            "gmv/overall/daily:2026-07-29/value",
+            "gmv/overall/daily:2026-07-22/value",
+            "gmv/overall/daily:2026-07-15/value",
+            "gmv/overall/daily:2026-07-08/value",
+            "gmv/overall/daily:2026-07-01/value",
+            "gmv/overall/daily:2026-06-24/value",
+            "gmv/overall/daily:2026-06-17/value",
+            "gmv/overall/daily:2026-06-10/value"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/overall/daily:2026-07-29/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-07-29"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/overall/daily:2026-07-22/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-07-22"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/overall/daily:2026-07-15/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-07-15"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/overall/daily:2026-07-08/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-07-08"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/overall/daily:2026-07-01/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-07-01"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/overall/daily:2026-06-24/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-06-24"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/overall/daily:2026-06-17/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-06-17"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "gmv/overall/daily:2026-06-10/value",
+          "flags": [],
+          "formula": "SUM(gmv) over the period",
+          "inputs": [
+            "source_rows:2026-06-10"
+          ],
+          "note": ""
+        }
+      ],
+      "display": "$333,330",
+      "fact_id": "gmv/overall/daily:2026-08-05/weekday_median",
+      "fact_label": "GMV | overall | day 2026-08-05 | median of the same-weekday baseline",
+      "highlight_index": 2,
+      "highlight_title": "Single-day spike in GMV for overall",
+      "metric_id": "gmv",
+      "period": {
+        "end": "2026-08-05",
+        "start": "2026-08-05",
+        "type": "daily"
+      },
+      "status": "bound",
+      "tolerance": 0.5,
+      "unit": "usd"
+    },
+    {
+      "claim_index": 0,
+      "claimed_value": 4601.0,
+      "computed_value": 4601.0,
+      "derivation": [
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/country=DE/complete_week:2026-08-08/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-08-02..2026-08-08"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "4,601",
+      "fact_id": "orders/country=DE/complete_week:2026-08-08/value",
+      "fact_label": "Orders | country=DE | week ending 2026-08-08 | value",
+      "highlight_index": 3,
+      "highlight_title": "Orders fell in country=DE",
+      "metric_id": "orders",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.5,
+      "unit": "count"
+    },
+    {
+      "claim_index": 1,
+      "claimed_value": -10.276911076443056,
+      "computed_value": -10.276911076443056,
+      "derivation": [
+        {
+          "computation": "wow_pct",
+          "fact_id": "orders/country=DE/complete_week:2026-08-08/wow_pct",
+          "flags": [],
+          "formula": "100 * (current - prior_week) / |prior_week|",
+          "inputs": [
+            "orders/country=DE/complete_week:2026-08-08/value",
+            "orders/country=DE/complete_week:2026-08-01/value"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/country=DE/complete_week:2026-08-08/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-08-02..2026-08-08"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/country=DE/complete_week:2026-08-01/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-26..2026-08-01"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "-10.3%",
+      "fact_id": "orders/country=DE/complete_week:2026-08-08/wow_pct",
+      "fact_label": "Orders | country=DE | week ending 2026-08-08 | change vs prior week (%)",
+      "highlight_index": 3,
+      "highlight_title": "Orders fell in country=DE",
+      "metric_id": "orders",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.05,
+      "unit": "percent"
+    },
+    {
+      "claim_index": 2,
+      "claimed_value": -527.0,
+      "computed_value": -527.0,
+      "derivation": [
+        {
+          "computation": "wow_delta",
+          "fact_id": "orders/country=DE/complete_week:2026-08-08/wow_delta",
+          "flags": [],
+          "formula": "current - prior_week",
+          "inputs": [
+            "orders/country=DE/complete_week:2026-08-08/value",
+            "orders/country=DE/complete_week:2026-08-01/value"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/country=DE/complete_week:2026-08-08/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-08-02..2026-08-08"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/country=DE/complete_week:2026-08-01/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-26..2026-08-01"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "-527",
+      "fact_id": "orders/country=DE/complete_week:2026-08-08/wow_delta",
+      "fact_label": "Orders | country=DE | week ending 2026-08-08 | change vs prior week (absolute)",
+      "highlight_index": 3,
+      "highlight_title": "Orders fell in country=DE",
+      "metric_id": "orders",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.5,
+      "unit": "count"
+    },
+    {
+      "claim_index": 3,
+      "claimed_value": 5095.75,
+      "computed_value": 5095.75,
+      "derivation": [
+        {
+          "computation": "baseline_mean",
+          "fact_id": "orders/country=DE/complete_week:2026-08-08/baseline_mean",
+          "flags": [],
+          "formula": "mean of the 4 prior complete weeks",
+          "inputs": [
+            "orders/country=DE/complete_week:2026-08-01/value",
+            "orders/country=DE/complete_week:2026-07-25/value",
+            "orders/country=DE/complete_week:2026-07-18/value",
+            "orders/country=DE/complete_week:2026-07-11/value"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/country=DE/complete_week:2026-08-01/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-26..2026-08-01"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/country=DE/complete_week:2026-07-25/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-19..2026-07-25"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/country=DE/complete_week:2026-07-18/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-12..2026-07-18"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/country=DE/complete_week:2026-07-11/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-05..2026-07-11"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "5,096",
+      "fact_id": "orders/country=DE/complete_week:2026-08-08/baseline_mean",
+      "fact_label": "Orders | country=DE | week ending 2026-08-08 | mean of the trailing 4-week baseline",
+      "highlight_index": 3,
+      "highlight_title": "Orders fell in country=DE",
+      "metric_id": "orders",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.5,
+      "unit": "count"
+    },
+    {
+      "claim_index": 4,
+      "claimed_value": -4.273949166820938,
+      "computed_value": -4.273949166820938,
+      "derivation": [
+        {
+          "computation": "screening_z",
+          "fact_id": "orders/country=DE/complete_week:2026-08-08/screening_z",
+          "flags": [],
+          "formula": "(current - baseline_mean) / baseline_sd  [sample sd, n-1]",
+          "inputs": [
+            "orders/country=DE/complete_week:2026-08-08/value",
+            "orders/country=DE/complete_week:2026-08-01/value",
+            "orders/country=DE/complete_week:2026-07-25/value",
+            "orders/country=DE/complete_week:2026-07-18/value",
+            "orders/country=DE/complete_week:2026-07-11/value"
+          ],
+          "note": "ranking heuristic on a 4-observation baseline, not a p-value"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/country=DE/complete_week:2026-08-08/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-08-02..2026-08-08"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/country=DE/complete_week:2026-08-01/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-26..2026-08-01"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/country=DE/complete_week:2026-07-25/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-19..2026-07-25"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/country=DE/complete_week:2026-07-18/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-12..2026-07-18"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/country=DE/complete_week:2026-07-11/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-05..2026-07-11"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "-4.27",
+      "fact_id": "orders/country=DE/complete_week:2026-08-08/screening_z",
+      "fact_label": "Orders | country=DE | week ending 2026-08-08 | screening z vs trailing baseline (ranking heuristic)",
+      "highlight_index": 3,
+      "highlight_title": "Orders fell in country=DE",
+      "metric_id": "orders",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.005,
+      "unit": "score"
+    },
+    {
+      "claim_index": 5,
+      "claimed_value": -122.55813953488372,
+      "computed_value": -122.55813953488372,
+      "derivation": [
+        {
+          "computation": "contribution_share_pct",
+          "fact_id": "orders/country=DE/complete_week:2026-08-08/contribution_share_pct",
+          "flags": [],
+          "formula": "100 * cut_wow_delta / overall_wow_delta",
+          "inputs": [
+            "orders/country=DE/complete_week:2026-08-08/wow_delta",
+            "orders/overall/complete_week:2026-08-08/wow_delta"
+          ],
+          "note": "additive statistics only; means and percentiles do not decompose"
+        },
+        {
+          "computation": "wow_delta",
+          "fact_id": "orders/country=DE/complete_week:2026-08-08/wow_delta",
+          "flags": [],
+          "formula": "current - prior_week",
+          "inputs": [
+            "orders/country=DE/complete_week:2026-08-08/value",
+            "orders/country=DE/complete_week:2026-08-01/value"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "wow_delta",
+          "fact_id": "orders/overall/complete_week:2026-08-08/wow_delta",
+          "flags": [],
+          "formula": "current - prior_week",
+          "inputs": [
+            "orders/overall/complete_week:2026-08-08/value",
+            "orders/overall/complete_week:2026-08-01/value"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/country=DE/complete_week:2026-08-08/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-08-02..2026-08-08"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/country=DE/complete_week:2026-08-01/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-26..2026-08-01"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/overall/complete_week:2026-08-08/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-08-02..2026-08-08"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/overall/complete_week:2026-08-01/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-26..2026-08-01"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "-122.6%",
+      "fact_id": "orders/country=DE/complete_week:2026-08-08/contribution_share_pct",
+      "fact_label": "Orders | country=DE | week ending 2026-08-08 | share of the overall week-over-week change (%)",
+      "highlight_index": 3,
+      "highlight_title": "Orders fell in country=DE",
+      "metric_id": "orders",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.05,
+      "unit": "percent"
+    },
+    {
+      "claim_index": 0,
+      "claimed_value": 8454.0,
+      "computed_value": 8454.0,
+      "derivation": [
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/channel=email/complete_week:2026-08-08/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-08-02..2026-08-08"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "8,454",
+      "fact_id": "orders/channel=email/complete_week:2026-08-08/value",
+      "fact_label": "Orders | channel=email | week ending 2026-08-08 | value",
+      "highlight_index": 4,
+      "highlight_title": "Orders rose in channel=email",
+      "metric_id": "orders",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.5,
+      "unit": "count"
+    },
+    {
+      "claim_index": 1,
+      "claimed_value": 9.253036960454898,
+      "computed_value": 9.253036960454898,
+      "derivation": [
+        {
+          "computation": "wow_pct",
+          "fact_id": "orders/channel=email/complete_week:2026-08-08/wow_pct",
+          "flags": [],
+          "formula": "100 * (current - prior_week) / |prior_week|",
+          "inputs": [
+            "orders/channel=email/complete_week:2026-08-08/value",
+            "orders/channel=email/complete_week:2026-08-01/value"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/channel=email/complete_week:2026-08-08/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-08-02..2026-08-08"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/channel=email/complete_week:2026-08-01/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-26..2026-08-01"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "9.3%",
+      "fact_id": "orders/channel=email/complete_week:2026-08-08/wow_pct",
+      "fact_label": "Orders | channel=email | week ending 2026-08-08 | change vs prior week (%)",
+      "highlight_index": 4,
+      "highlight_title": "Orders rose in channel=email",
+      "metric_id": "orders",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.05,
+      "unit": "percent"
+    },
+    {
+      "claim_index": 2,
+      "claimed_value": 716.0,
+      "computed_value": 716.0,
+      "derivation": [
+        {
+          "computation": "wow_delta",
+          "fact_id": "orders/channel=email/complete_week:2026-08-08/wow_delta",
+          "flags": [],
+          "formula": "current - prior_week",
+          "inputs": [
+            "orders/channel=email/complete_week:2026-08-08/value",
+            "orders/channel=email/complete_week:2026-08-01/value"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/channel=email/complete_week:2026-08-08/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-08-02..2026-08-08"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/channel=email/complete_week:2026-08-01/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-26..2026-08-01"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "716",
+      "fact_id": "orders/channel=email/complete_week:2026-08-08/wow_delta",
+      "fact_label": "Orders | channel=email | week ending 2026-08-08 | change vs prior week (absolute)",
+      "highlight_index": 4,
+      "highlight_title": "Orders rose in channel=email",
+      "metric_id": "orders",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.5,
+      "unit": "count"
+    },
+    {
+      "claim_index": 3,
+      "claimed_value": 7129.5,
+      "computed_value": 7129.5,
+      "derivation": [
+        {
+          "computation": "baseline_mean",
+          "fact_id": "orders/channel=email/complete_week:2026-08-08/baseline_mean",
+          "flags": [],
+          "formula": "mean of the 4 prior complete weeks",
+          "inputs": [
+            "orders/channel=email/complete_week:2026-08-01/value",
+            "orders/channel=email/complete_week:2026-07-25/value",
+            "orders/channel=email/complete_week:2026-07-18/value",
+            "orders/channel=email/complete_week:2026-07-11/value"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/channel=email/complete_week:2026-08-01/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-26..2026-08-01"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/channel=email/complete_week:2026-07-25/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-19..2026-07-25"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/channel=email/complete_week:2026-07-18/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-12..2026-07-18"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/channel=email/complete_week:2026-07-11/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-05..2026-07-11"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "7,130",
+      "fact_id": "orders/channel=email/complete_week:2026-08-08/baseline_mean",
+      "fact_label": "Orders | channel=email | week ending 2026-08-08 | mean of the trailing 4-week baseline",
+      "highlight_index": 4,
+      "highlight_title": "Orders rose in channel=email",
+      "metric_id": "orders",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.5,
+      "unit": "count"
+    },
+    {
+      "claim_index": 4,
+      "claimed_value": 2.540688792226984,
+      "computed_value": 2.540688792226984,
+      "derivation": [
+        {
+          "computation": "screening_z",
+          "fact_id": "orders/channel=email/complete_week:2026-08-08/screening_z",
+          "flags": [],
+          "formula": "(current - baseline_mean) / baseline_sd  [sample sd, n-1]",
+          "inputs": [
+            "orders/channel=email/complete_week:2026-08-08/value",
+            "orders/channel=email/complete_week:2026-08-01/value",
+            "orders/channel=email/complete_week:2026-07-25/value",
+            "orders/channel=email/complete_week:2026-07-18/value",
+            "orders/channel=email/complete_week:2026-07-11/value"
+          ],
+          "note": "ranking heuristic on a 4-observation baseline, not a p-value"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/channel=email/complete_week:2026-08-08/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-08-02..2026-08-08"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/channel=email/complete_week:2026-08-01/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-26..2026-08-01"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/channel=email/complete_week:2026-07-25/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-19..2026-07-25"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/channel=email/complete_week:2026-07-18/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-12..2026-07-18"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/channel=email/complete_week:2026-07-11/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-05..2026-07-11"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "2.54",
+      "fact_id": "orders/channel=email/complete_week:2026-08-08/screening_z",
+      "fact_label": "Orders | channel=email | week ending 2026-08-08 | screening z vs trailing baseline (ranking heuristic)",
+      "highlight_index": 4,
+      "highlight_title": "Orders rose in channel=email",
+      "metric_id": "orders",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.005,
+      "unit": "score"
+    },
+    {
+      "claim_index": 5,
+      "claimed_value": 166.51162790697674,
+      "computed_value": 166.51162790697674,
+      "derivation": [
+        {
+          "computation": "contribution_share_pct",
+          "fact_id": "orders/channel=email/complete_week:2026-08-08/contribution_share_pct",
+          "flags": [],
+          "formula": "100 * cut_wow_delta / overall_wow_delta",
+          "inputs": [
+            "orders/channel=email/complete_week:2026-08-08/wow_delta",
+            "orders/overall/complete_week:2026-08-08/wow_delta"
+          ],
+          "note": "additive statistics only; means and percentiles do not decompose"
+        },
+        {
+          "computation": "wow_delta",
+          "fact_id": "orders/channel=email/complete_week:2026-08-08/wow_delta",
+          "flags": [],
+          "formula": "current - prior_week",
+          "inputs": [
+            "orders/channel=email/complete_week:2026-08-08/value",
+            "orders/channel=email/complete_week:2026-08-01/value"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "wow_delta",
+          "fact_id": "orders/overall/complete_week:2026-08-08/wow_delta",
+          "flags": [],
+          "formula": "current - prior_week",
+          "inputs": [
+            "orders/overall/complete_week:2026-08-08/value",
+            "orders/overall/complete_week:2026-08-01/value"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/channel=email/complete_week:2026-08-08/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-08-02..2026-08-08"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/channel=email/complete_week:2026-08-01/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-26..2026-08-01"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/overall/complete_week:2026-08-08/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-08-02..2026-08-08"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "orders/overall/complete_week:2026-08-01/value",
+          "flags": [],
+          "formula": "SUM(orders) over the period",
+          "inputs": [
+            "source_rows:2026-07-26..2026-08-01"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "166.5%",
+      "fact_id": "orders/channel=email/complete_week:2026-08-08/contribution_share_pct",
+      "fact_label": "Orders | channel=email | week ending 2026-08-08 | share of the overall week-over-week change (%)",
+      "highlight_index": 4,
+      "highlight_title": "Orders rose in channel=email",
+      "metric_id": "orders",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.05,
+      "unit": "percent"
+    },
+    {
+      "claim_index": 0,
+      "claimed_value": 3.268659325292781,
+      "computed_value": 3.268659325292781,
+      "derivation": [
+        {
+          "computation": "aggregate",
+          "fact_id": "conversion_rate/country=JP/complete_week:2026-08-08/value",
+          "flags": [],
+          "formula": "100 * SUM(orders) / SUM(sessions) over the period",
+          "inputs": [
+            "source_rows:2026-08-02..2026-08-08"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "3.27%",
+      "fact_id": "conversion_rate/country=JP/complete_week:2026-08-08/value",
+      "fact_label": "Conversion rate | country=JP | week ending 2026-08-08 | value",
+      "highlight_index": 5,
+      "highlight_title": "Conversion rate rose in country=JP",
+      "metric_id": "conversion_rate",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.005,
+      "unit": "percent"
+    },
+    {
+      "claim_index": 1,
+      "claimed_value": 4.993796281345355,
+      "computed_value": 4.993796281345355,
+      "derivation": [
+        {
+          "computation": "wow_pct",
+          "fact_id": "conversion_rate/country=JP/complete_week:2026-08-08/wow_pct",
+          "flags": [],
+          "formula": "100 * (current - prior_week) / |prior_week|",
+          "inputs": [
+            "conversion_rate/country=JP/complete_week:2026-08-08/value",
+            "conversion_rate/country=JP/complete_week:2026-08-01/value"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "conversion_rate/country=JP/complete_week:2026-08-08/value",
+          "flags": [],
+          "formula": "100 * SUM(orders) / SUM(sessions) over the period",
+          "inputs": [
+            "source_rows:2026-08-02..2026-08-08"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "conversion_rate/country=JP/complete_week:2026-08-01/value",
+          "flags": [],
+          "formula": "100 * SUM(orders) / SUM(sessions) over the period",
+          "inputs": [
+            "source_rows:2026-07-26..2026-08-01"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "5.0%",
+      "fact_id": "conversion_rate/country=JP/complete_week:2026-08-08/wow_pct",
+      "fact_label": "Conversion rate | country=JP | week ending 2026-08-08 | change vs prior week (%)",
+      "highlight_index": 5,
+      "highlight_title": "Conversion rate rose in country=JP",
+      "metric_id": "conversion_rate",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.05,
+      "unit": "percent"
+    },
+    {
+      "claim_index": 2,
+      "claimed_value": 0.15546650718193034,
+      "computed_value": 0.15546650718193034,
+      "derivation": [
+        {
+          "computation": "wow_delta",
+          "fact_id": "conversion_rate/country=JP/complete_week:2026-08-08/wow_delta",
+          "flags": [],
+          "formula": "current - prior_week",
+          "inputs": [
+            "conversion_rate/country=JP/complete_week:2026-08-08/value",
+            "conversion_rate/country=JP/complete_week:2026-08-01/value"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "conversion_rate/country=JP/complete_week:2026-08-08/value",
+          "flags": [],
+          "formula": "100 * SUM(orders) / SUM(sessions) over the period",
+          "inputs": [
+            "source_rows:2026-08-02..2026-08-08"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "conversion_rate/country=JP/complete_week:2026-08-01/value",
+          "flags": [],
+          "formula": "100 * SUM(orders) / SUM(sessions) over the period",
+          "inputs": [
+            "source_rows:2026-07-26..2026-08-01"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "0.16pp",
+      "fact_id": "conversion_rate/country=JP/complete_week:2026-08-08/wow_delta",
+      "fact_label": "Conversion rate | country=JP | week ending 2026-08-08 | change vs prior week (absolute)",
+      "highlight_index": 5,
+      "highlight_title": "Conversion rate rose in country=JP",
+      "metric_id": "conversion_rate",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.005,
+      "unit": "pp"
+    },
+    {
+      "claim_index": 3,
+      "claimed_value": 3.10844232496045,
+      "computed_value": 3.10844232496045,
+      "derivation": [
+        {
+          "computation": "baseline_mean",
+          "fact_id": "conversion_rate/country=JP/complete_week:2026-08-08/baseline_mean",
+          "flags": [],
+          "formula": "mean of the 4 prior complete weeks",
+          "inputs": [
+            "conversion_rate/country=JP/complete_week:2026-08-01/value",
+            "conversion_rate/country=JP/complete_week:2026-07-25/value",
+            "conversion_rate/country=JP/complete_week:2026-07-18/value",
+            "conversion_rate/country=JP/complete_week:2026-07-11/value"
+          ],
+          "note": ""
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "conversion_rate/country=JP/complete_week:2026-08-01/value",
+          "flags": [],
+          "formula": "100 * SUM(orders) / SUM(sessions) over the period",
+          "inputs": [
+            "source_rows:2026-07-26..2026-08-01"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "conversion_rate/country=JP/complete_week:2026-07-25/value",
+          "flags": [],
+          "formula": "100 * SUM(orders) / SUM(sessions) over the period",
+          "inputs": [
+            "source_rows:2026-07-19..2026-07-25"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "conversion_rate/country=JP/complete_week:2026-07-18/value",
+          "flags": [],
+          "formula": "100 * SUM(orders) / SUM(sessions) over the period",
+          "inputs": [
+            "source_rows:2026-07-12..2026-07-18"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "conversion_rate/country=JP/complete_week:2026-07-11/value",
+          "flags": [],
+          "formula": "100 * SUM(orders) / SUM(sessions) over the period",
+          "inputs": [
+            "source_rows:2026-07-05..2026-07-11"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "3.11%",
+      "fact_id": "conversion_rate/country=JP/complete_week:2026-08-08/baseline_mean",
+      "fact_label": "Conversion rate | country=JP | week ending 2026-08-08 | mean of the trailing 4-week baseline",
+      "highlight_index": 5,
+      "highlight_title": "Conversion rate rose in country=JP",
+      "metric_id": "conversion_rate",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.005,
+      "unit": "percent"
+    },
+    {
+      "claim_index": 4,
+      "claimed_value": 3.370873406500037,
+      "computed_value": 3.370873406500037,
+      "derivation": [
+        {
+          "computation": "screening_z",
+          "fact_id": "conversion_rate/country=JP/complete_week:2026-08-08/screening_z",
+          "flags": [],
+          "formula": "(current - baseline_mean) / baseline_sd  [sample sd, n-1]",
+          "inputs": [
+            "conversion_rate/country=JP/complete_week:2026-08-08/value",
+            "conversion_rate/country=JP/complete_week:2026-08-01/value",
+            "conversion_rate/country=JP/complete_week:2026-07-25/value",
+            "conversion_rate/country=JP/complete_week:2026-07-18/value",
+            "conversion_rate/country=JP/complete_week:2026-07-11/value"
+          ],
+          "note": "ranking heuristic on a 4-observation baseline, not a p-value"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "conversion_rate/country=JP/complete_week:2026-08-08/value",
+          "flags": [],
+          "formula": "100 * SUM(orders) / SUM(sessions) over the period",
+          "inputs": [
+            "source_rows:2026-08-02..2026-08-08"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "conversion_rate/country=JP/complete_week:2026-08-01/value",
+          "flags": [],
+          "formula": "100 * SUM(orders) / SUM(sessions) over the period",
+          "inputs": [
+            "source_rows:2026-07-26..2026-08-01"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "conversion_rate/country=JP/complete_week:2026-07-25/value",
+          "flags": [],
+          "formula": "100 * SUM(orders) / SUM(sessions) over the period",
+          "inputs": [
+            "source_rows:2026-07-19..2026-07-25"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "conversion_rate/country=JP/complete_week:2026-07-18/value",
+          "flags": [],
+          "formula": "100 * SUM(orders) / SUM(sessions) over the period",
+          "inputs": [
+            "source_rows:2026-07-12..2026-07-18"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        },
+        {
+          "computation": "aggregate",
+          "fact_id": "conversion_rate/country=JP/complete_week:2026-07-11/value",
+          "flags": [],
+          "formula": "100 * SUM(orders) / SUM(sessions) over the period",
+          "inputs": [
+            "source_rows:2026-07-05..2026-07-11"
+          ],
+          "note": "aggregated from the source rows inside the period"
+        }
+      ],
+      "display": "3.37",
+      "fact_id": "conversion_rate/country=JP/complete_week:2026-08-08/screening_z",
+      "fact_label": "Conversion rate | country=JP | week ending 2026-08-08 | screening z vs trailing baseline (ranking heuristic)",
+      "highlight_index": 5,
+      "highlight_title": "Conversion rate rose in country=JP",
+      "metric_id": "conversion_rate",
+      "period": {
+        "end": "2026-08-08",
+        "start": "2026-08-02",
+        "type": "complete_week"
+      },
+      "status": "bound",
+      "tolerance": 0.005,
+      "unit": "score"
+    }
+  ],
+  "coverage": [
+    {
+      "detail": "",
+      "metric_id": "aov",
+      "required": false,
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "metric_id": "conversion_rate",
+      "required": true,
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "metric_id": "gmv",
+      "required": true,
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "metric_id": "orders",
+      "required": true,
+      "status": "ok"
+    },
+    {
+      "detail": "",
+      "metric_id": "sessions",
+      "required": false,
+      "status": "ok"
+    }
+  ],
+  "generated_at": "2026-08-13T21:35:06+00:00",
+  "incomplete": false,
+  "inputs": {
+    "brief_file": "config/audience_brief.md",
+    "data_file": "data/storefront.csv",
+    "data_range": [
+      "2025-02-09",
+      "2026-08-12"
+    ],
+    "data_sha256": "e7b3e32cc58a6d7a69de4d27eedb4bc806b27095bdbbb420d8b4a396a4a4e885",
+    "registry_file": "config/registry.toml",
+    "registry_sha256": "9fb1efa641ee3c722c576ff8e1774ccaa199b7eaad9cbeed9c8a7e57469ca941",
+    "rows": 16467
+  },
+  "notes": [
+    "screening_z and robust_score are ranking heuristics computed on short baselines, not calibrated significance tests.",
+    "source data sha256: e7b3e32cc58a6d7a69de4d27eedb4bc806b27095bdbbb420d8b4a396a4a4e885"
+  ],
+  "partial_week": {
+    "end": "2026-08-12",
+    "start": "2026-08-09"
+  },
+  "render": {
+    "highlights_rendered": 6,
+    "redactions": 0
+  },
+  "run_id": "2026-08-13-3bd775d6a0",
+  "schema_version": "1.0",
+  "shortlist": [
+    {
+      "cut": "overall",
+      "fact_ids": [
+        "gmv/overall/complete_week:2026-08-08/value",
+        "gmv/overall/complete_week:2026-08-08/n_obs",
+        "gmv/overall/complete_week:2026-08-08/wow_delta",
+        "gmv/overall/complete_week:2026-08-08/wow_pct",
+        "gmv/overall/complete_week:2026-08-08/baseline_mean",
+        "gmv/overall/complete_week:2026-08-08/vs_baseline_pct",
+        "gmv/overall/complete_week:2026-08-08/screening_z",
+        "gmv/overall/complete_week:2026-08-01/value",
+        "gmv/overall/partial_week:2026-08-12/value",
+        "gmv/overall/partial_week:2026-08-12/slice_baseline_mean",
+        "gmv/overall/partial_week:2026-08-12/vs_slice_pct",
+        "gmv/overall/daily:2026-08-05/value",
+        "gmv/overall/daily:2026-08-05/weekday_median",
+        "gmv/overall/daily:2026-08-05/robust_scale",
+        "gmv/overall/daily:2026-08-05/robust_score"
+      ],
+      "metric_id": "gmv",
+      "rank": 1,
+      "selected_by": [
+        "overall"
+      ]
+    },
+    {
+      "cut": "country=JP",
+      "fact_ids": [
+        "gmv/country=JP/complete_week:2026-08-08/value",
+        "gmv/country=JP/complete_week:2026-08-08/n_obs",
+        "gmv/country=JP/complete_week:2026-08-08/wow_delta",
+        "gmv/country=JP/complete_week:2026-08-08/wow_pct",
+        "gmv/country=JP/complete_week:2026-08-08/baseline_mean",
+        "gmv/country=JP/complete_week:2026-08-08/vs_baseline_pct",
+        "gmv/country=JP/complete_week:2026-08-08/screening_z",
+        "gmv/country=JP/complete_week:2026-08-08/contribution_share_pct",
+        "gmv/country=JP/complete_week:2026-08-01/value",
+        "gmv/country=JP/partial_week:2026-08-12/value",
+        "gmv/country=JP/partial_week:2026-08-12/slice_baseline_mean",
+        "gmv/country=JP/partial_week:2026-08-12/vs_slice_pct",
+        "gmv/country=JP/daily:2026-08-05/value",
+        "gmv/country=JP/daily:2026-08-05/weekday_median",
+        "gmv/country=JP/daily:2026-08-05/robust_scale",
+        "gmv/country=JP/daily:2026-08-05/robust_score"
+      ],
+      "metric_id": "gmv",
+      "rank": 2,
+      "selected_by": [
+        "contribution_share_pct",
+        "screening_z"
+      ]
+    },
+    {
+      "cut": "country=DE",
+      "fact_ids": [
+        "gmv/country=DE/complete_week:2026-08-08/value",
+        "gmv/country=DE/complete_week:2026-08-08/n_obs",
+        "gmv/country=DE/complete_week:2026-08-08/wow_delta",
+        "gmv/country=DE/complete_week:2026-08-08/wow_pct",
+        "gmv/country=DE/complete_week:2026-08-08/baseline_mean",
+        "gmv/country=DE/complete_week:2026-08-08/vs_baseline_pct",
+        "gmv/country=DE/complete_week:2026-08-08/screening_z",
+        "gmv/country=DE/complete_week:2026-08-08/contribution_share_pct",
+        "gmv/country=DE/complete_week:2026-08-01/value",
+        "gmv/country=DE/partial_week:2026-08-12/value",
+        "gmv/country=DE/partial_week:2026-08-12/slice_baseline_mean",
+        "gmv/country=DE/partial_week:2026-08-12/vs_slice_pct",
+        "gmv/country=DE/daily:2026-08-06/value",
+        "gmv/country=DE/daily:2026-08-06/weekday_median",
+        "gmv/country=DE/daily:2026-08-06/robust_scale",
+        "gmv/country=DE/daily:2026-08-06/robust_score"
+      ],
+      "metric_id": "gmv",
+      "rank": 3,
+      "selected_by": [
+        "contribution_share_pct",
+        "screening_z"
+      ]
+    },
+    {
+      "cut": "channel=display_ads",
+      "fact_ids": [
+        "gmv/channel=display_ads/complete_week:2026-08-08/value",
+        "gmv/channel=display_ads/complete_week:2026-08-08/n_obs",
+        "gmv/channel=display_ads/complete_week:2026-08-08/wow_delta",
+        "gmv/channel=display_ads/complete_week:2026-08-08/wow_pct",
+        "gmv/channel=display_ads/complete_week:2026-08-08/baseline_mean",
+        "gmv/channel=display_ads/complete_week:2026-08-08/vs_baseline_pct",
+        "gmv/channel=display_ads/complete_week:2026-08-08/screening_z",
+        "gmv/channel=display_ads/complete_week:2026-08-08/contribution_share_pct",
+        "gmv/channel=display_ads/complete_week:2026-08-01/value",
+        "gmv/channel=display_ads/partial_week:2026-08-12/value",
+        "gmv/channel=display_ads/partial_week:2026-08-12/slice_baseline_mean",
+        "gmv/channel=display_ads/partial_week:2026-08-12/vs_slice_pct",
+        "gmv/channel=display_ads/daily:2026-08-02/value",
+        "gmv/channel=display_ads/daily:2026-08-02/weekday_median",
+        "gmv/channel=display_ads/daily:2026-08-02/robust_scale",
+        "gmv/channel=display_ads/daily:2026-08-02/robust_score",
+        "gmv/channel=display_ads/daily:2026-08-03/value",
+        "gmv/channel=display_ads/daily:2026-08-03/weekday_median",
+        "gmv/channel=display_ads/daily:2026-08-03/robust_scale",
+        "gmv/channel=display_ads/daily:2026-08-03/robust_score",
+        "gmv/channel=display_ads/daily:2026-08-04/value",
+        "gmv/channel=display_ads/daily:2026-08-04/weekday_median",
+        "gmv/channel=display_ads/daily:2026-08-04/robust_scale",
+        "gmv/channel=display_ads/daily:2026-08-04/robust_score",
+        "gmv/channel=display_ads/daily:2026-08-05/value",
+        "gmv/channel=display_ads/daily:2026-08-05/weekday_median",
+        "gmv/channel=display_ads/daily:2026-08-05/robust_scale",
+        "gmv/channel=display_ads/daily:2026-08-05/robust_score",
+        "gmv/channel=display_ads/daily:2026-08-06/value",
+        "gmv/channel=display_ads/daily:2026-08-06/weekday_median",
+        "gmv/channel=display_ads/daily:2026-08-06/robust_scale",
+        "gmv/channel=display_ads/daily:2026-08-06/robust_score",
+        "gmv/channel=display_ads/daily:2026-08-07/value",
+        "gmv/channel=display_ads/daily:2026-08-07/weekday_median",
+        "gmv/channel=display_ads/daily:2026-08-07/robust_scale",
+        "gmv/channel=display_ads/daily:2026-08-07/robust_score",
+        "gmv/channel=display_ads/daily:2026-08-08/value",
+        "gmv/channel=display_ads/daily:2026-08-08/weekday_median",
+        "gmv/channel=display_ads/daily:2026-08-08/robust_scale",
+        "gmv/channel=display_ads/daily:2026-08-08/robust_score"
+      ],
+      "metric_id": "gmv",
+      "rank": 4,
+      "selected_by": [
+        "contribution_share_pct",
+        "disappeared",
+        "screening_z"
+      ]
+    },
+    {
+      "cut": "channel=affiliate",
+      "fact_ids": [
+        "gmv/channel=affiliate/complete_week:2026-08-08/value",
+        "gmv/channel=affiliate/complete_week:2026-08-08/n_obs",
+        "gmv/channel=affiliate/complete_week:2026-08-08/wow_delta",
+        "gmv/channel=affiliate/complete_week:2026-08-08/wow_pct",
+        "gmv/channel=affiliate/complete_week:2026-08-08/baseline_mean",
+        "gmv/channel=affiliate/complete_week:2026-08-08/vs_baseline_pct",
+        "gmv/channel=affiliate/complete_week:2026-08-08/screening_z",
+        "gmv/channel=affiliate/complete_week:2026-08-08/contribution_share_pct",
+        "gmv/channel=affiliate/complete_week:2026-08-01/value",
+        "gmv/channel=affiliate/partial_week:2026-08-12/value",
+        "gmv/channel=affiliate/partial_week:2026-08-12/slice_baseline_mean",
+        "gmv/channel=affiliate/partial_week:2026-08-12/vs_slice_pct",
+        "gmv/channel=affiliate/daily:2026-08-02/value",
+        "gmv/channel=affiliate/daily:2026-08-02/weekday_median",
+        "gmv/channel=affiliate/daily:2026-08-02/robust_scale",
+        "gmv/channel=affiliate/daily:2026-08-02/robust_score",
+        "gmv/channel=affiliate/daily:2026-08-05/value",
+        "gmv/channel=affiliate/daily:2026-08-05/weekday_median",
+        "gmv/channel=affiliate/daily:2026-08-05/robust_scale",
+        "gmv/channel=affiliate/daily:2026-08-05/robust_score",
+        "gmv/channel=affiliate/daily:2026-08-06/value",
+        "gmv/channel=affiliate/daily:2026-08-06/weekday_median",
+        "gmv/channel=affiliate/daily:2026-08-06/robust_scale",
+        "gmv/channel=affiliate/daily:2026-08-06/robust_score",
+        "gmv/channel=affiliate/daily:2026-08-07/value",
+        "gmv/channel=affiliate/daily:2026-08-07/weekday_median",
+        "gmv/channel=affiliate/daily:2026-08-07/robust_scale",
+        "gmv/channel=affiliate/daily:2026-08-07/robust_score",
+        "gmv/channel=affiliate/daily:2026-08-08/value",
+        "gmv/channel=affiliate/daily:2026-08-08/weekday_median",
+        "gmv/channel=affiliate/daily:2026-08-08/robust_scale",
+        "gmv/channel=affiliate/daily:2026-08-08/robust_score"
+      ],
+      "metric_id": "gmv",
+      "rank": 5,
+      "selected_by": [
+        "screening_z"
+      ]
+    },
+    {
+      "cut": "channel=email",
+      "fact_ids": [
+        "gmv/channel=email/complete_week:2026-08-08/value",
+        "gmv/channel=email/complete_week:2026-08-08/n_obs",
+        "gmv/channel=email/complete_week:2026-08-08/wow_delta",
+        "gmv/channel=email/complete_week:2026-08-08/wow_pct",
+        "gmv/channel=email/complete_week:2026-08-08/baseline_mean",
+        "gmv/channel=email/complete_week:2026-08-08/vs_baseline_pct",
+        "gmv/channel=email/complete_week:2026-08-08/screening_z",
+        "gmv/channel=email/complete_week:2026-08-08/contribution_share_pct",
+        "gmv/channel=email/complete_week:2026-08-01/value",
+        "gmv/channel=email/partial_week:2026-08-12/value",
+        "gmv/channel=email/partial_week:2026-08-12/slice_baseline_mean",
+        "gmv/channel=email/partial_week:2026-08-12/vs_slice_pct",
+        "gmv/channel=email/daily:2026-08-05/value",
+        "gmv/channel=email/daily:2026-08-05/weekday_median",
+        "gmv/channel=email/daily:2026-08-05/robust_scale",
+        "gmv/channel=email/daily:2026-08-05/robust_score",
+        "gmv/channel=email/daily:2026-08-07/value",
+        "gmv/channel=email/daily:2026-08-07/weekday_median",
+        "gmv/channel=email/daily:2026-08-07/robust_scale",
+        "gmv/channel=email/daily:2026-08-07/robust_score",
+        "gmv/channel=email/daily:2026-08-08/value",
+        "gmv/channel=email/daily:2026-08-08/weekday_median",
+        "gmv/channel=email/daily:2026-08-08/robust_scale",
+        "gmv/channel=email/daily:2026-08-08/robust_score"
+      ],
+      "metric_id": "gmv",
+      "rank": 6,
+      "selected_by": [
+        "contribution_share_pct"
+      ]
+    },
+    {
+      "cut": "channel=marketplace",
+      "fact_ids": [
+        "gmv/channel=marketplace/complete_week:2026-08-08/value",
+        "gmv/channel=marketplace/complete_week:2026-08-08/n_obs",
+        "gmv/channel=marketplace/complete_week:2026-08-08/wow_delta",
+        "gmv/channel=marketplace/complete_week:2026-08-08/wow_pct",
+        "gmv/channel=marketplace/complete_week:2026-08-08/baseline_mean",
+        "gmv/channel=marketplace/complete_week:2026-08-08/vs_baseline_pct",
+        "gmv/channel=marketplace/complete_week:2026-08-08/screening_z",
+        "gmv/channel=marketplace/complete_week:2026-08-08/contribution_share_pct",
+        "gmv/channel=marketplace/complete_week:2026-08-01/value",
+        "gmv/channel=marketplace/partial_week:2026-08-12/value",
+        "gmv/channel=marketplace/partial_week:2026-08-12/slice_baseline_mean",
+        "gmv/channel=marketplace/partial_week:2026-08-12/vs_slice_pct",
+        "gmv/channel=marketplace/daily:2026-08-02/value",
+        "gmv/channel=marketplace/daily:2026-08-02/weekday_median",
+        "gmv/channel=marketplace/daily:2026-08-02/robust_scale",
+        "gmv/channel=marketplace/daily:2026-08-02/robust_score",
+        "gmv/channel=marketplace/daily:2026-08-03/value",
+        "gmv/channel=marketplace/daily:2026-08-03/weekday_median",
+        "gmv/channel=marketplace/daily:2026-08-03/robust_scale",
+        "gmv/channel=marketplace/daily:2026-08-03/robust_score",
+        "gmv/channel=marketplace/daily:2026-08-04/value",
+        "gmv/channel=marketplace/daily:2026-08-04/weekday_median",
+        "gmv/channel=marketplace/daily:2026-08-04/robust_scale",
+        "gmv/channel=marketplace/daily:2026-08-04/robust_score",
+        "gmv/channel=marketplace/daily:2026-08-05/value",
+        "gmv/channel=marketplace/daily:2026-08-05/weekday_median",
+        "gmv/channel=marketplace/daily:2026-08-05/robust_scale",
+        "gmv/channel=marketplace/daily:2026-08-05/robust_score",
+        "gmv/channel=marketplace/daily:2026-08-06/value",
+        "gmv/channel=marketplace/daily:2026-08-06/weekday_median",
+        "gmv/channel=marketplace/daily:2026-08-06/robust_scale",
+        "gmv/channel=marketplace/daily:2026-08-06/robust_score",
+        "gmv/channel=marketplace/daily:2026-08-07/value",
+        "gmv/channel=marketplace/daily:2026-08-07/weekday_median",
+        "gmv/channel=marketplace/daily:2026-08-07/robust_scale",
+        "gmv/channel=marketplace/daily:2026-08-07/robust_score",
+        "gmv/channel=marketplace/daily:2026-08-08/value",
+        "gmv/channel=marketplace/daily:2026-08-08/weekday_median",
+        "gmv/channel=marketplace/daily:2026-08-08/robust_scale",
+        "gmv/channel=marketplace/daily:2026-08-08/robust_score"
+      ],
+      "metric_id": "gmv",
+      "rank": 7,
+      "selected_by": [
+        "newly_appeared"
+      ]
+    },
+    {
+      "cut": "overall",
+      "fact_ids": [
+        "orders/overall/complete_week:2026-08-08/value",
+        "orders/overall/complete_week:2026-08-08/n_obs",
+        "orders/overall/complete_week:2026-08-08/wow_delta",
+        "orders/overall/complete_week:2026-08-08/wow_pct",
+        "orders/overall/complete_week:2026-08-08/baseline_mean",
+        "orders/overall/complete_week:2026-08-08/vs_baseline_pct",
+        "orders/overall/complete_week:2026-08-08/screening_z",
+        "orders/overall/complete_week:2026-08-01/value",
+        "orders/overall/partial_week:2026-08-12/value",
+        "orders/overall/partial_week:2026-08-12/slice_baseline_mean",
+        "orders/overall/partial_week:2026-08-12/vs_slice_pct",
+        "orders/overall/daily:2026-08-05/value",
+        "orders/overall/daily:2026-08-05/weekday_median",
+        "orders/overall/daily:2026-08-05/robust_scale",
+        "orders/overall/daily:2026-08-05/robust_score"
+      ],
+      "metric_id": "orders",
+      "rank": 8,
+      "selected_by": [
+        "overall"
+      ]
+    },
+    {
+      "cut": "country=JP",
+      "fact_ids": [
+        "orders/country=JP/complete_week:2026-08-08/value",
+        "orders/country=JP/complete_week:2026-08-08/n_obs",
+        "orders/country=JP/complete_week:2026-08-08/wow_delta",
+        "orders/country=JP/complete_week:2026-08-08/wow_pct",
+        "orders/country=JP/complete_week:2026-08-08/baseline_mean",
+        "orders/country=JP/complete_week:2026-08-08/vs_baseline_pct",
+        "orders/country=JP/complete_week:2026-08-08/screening_z",
+        "orders/country=JP/complete_week:2026-08-08/contribution_share_pct",
+        "orders/country=JP/complete_week:2026-08-01/value",
+        "orders/country=JP/partial_week:2026-08-12/value",
+        "orders/country=JP/partial_week:2026-08-12/slice_baseline_mean",
+        "orders/country=JP/partial_week:2026-08-12/vs_slice_pct",
+        "orders/country=JP/daily:2026-08-05/value",
+        "orders/country=JP/daily:2026-08-05/weekday_median",
+        "orders/country=JP/daily:2026-08-05/robust_scale",
+        "orders/country=JP/daily:2026-08-05/robust_score"
+      ],
+      "metric_id": "orders",
+      "rank": 9,
+      "selected_by": [
+        "contribution_share_pct",
+        "screening_z"
+      ]
+    },
+    {
+      "cut": "country=DE",
+      "fact_ids": [
+        "orders/country=DE/complete_week:2026-08-08/value",
+        "orders/country=DE/complete_week:2026-08-08/n_obs",
+        "orders/country=DE/complete_week:2026-08-08/wow_delta",
+        "orders/country=DE/complete_week:2026-08-08/wow_pct",
+        "orders/country=DE/complete_week:2026-08-08/baseline_mean",
+        "orders/country=DE/complete_week:2026-08-08/vs_baseline_pct",
+        "orders/country=DE/complete_week:2026-08-08/screening_z",
+        "orders/country=DE/complete_week:2026-08-08/contribution_share_pct",
+        "orders/country=DE/complete_week:2026-08-01/value",
+        "orders/country=DE/partial_week:2026-08-12/value",
+        "orders/country=DE/partial_week:2026-08-12/slice_baseline_mean",
+        "orders/country=DE/partial_week:2026-08-12/vs_slice_pct",
+        "orders/country=DE/daily:2026-08-06/value",
+        "orders/country=DE/daily:2026-08-06/weekday_median",
+        "orders/country=DE/daily:2026-08-06/robust_scale",
+        "orders/country=DE/daily:2026-08-06/robust_score"
+      ],
+      "metric_id": "orders",
+      "rank": 10,
+      "selected_by": [
+        "contribution_share_pct",
+        "screening_z"
+      ]
+    },
+    {
+      "cut": "channel=display_ads",
+      "fact_ids": [
+        "orders/channel=display_ads/complete_week:2026-08-08/value",
+        "orders/channel=display_ads/complete_week:2026-08-08/n_obs",
+        "orders/channel=display_ads/complete_week:2026-08-08/wow_delta",
+        "orders/channel=display_ads/complete_week:2026-08-08/wow_pct",
+        "orders/channel=display_ads/complete_week:2026-08-08/baseline_mean",
+        "orders/channel=display_ads/complete_week:2026-08-08/vs_baseline_pct",
+        "orders/channel=display_ads/complete_week:2026-08-08/screening_z",
+        "orders/channel=display_ads/complete_week:2026-08-08/contribution_share_pct",
+        "orders/channel=display_ads/complete_week:2026-08-01/value",
+        "orders/channel=display_ads/partial_week:2026-08-12/value",
+        "orders/channel=display_ads/partial_week:2026-08-12/slice_baseline_mean",
+        "orders/channel=display_ads/partial_week:2026-08-12/vs_slice_pct",
+        "orders/channel=display_ads/daily:2026-08-02/value",
+        "orders/channel=display_ads/daily:2026-08-02/weekday_median",
+        "orders/channel=display_ads/daily:2026-08-02/robust_scale",
+        "orders/channel=display_ads/daily:2026-08-02/robust_score",
+        "orders/channel=display_ads/daily:2026-08-03/value",
+        "orders/channel=display_ads/daily:2026-08-03/weekday_median",
+        "orders/channel=display_ads/daily:2026-08-03/robust_scale",
+        "orders/channel=display_ads/daily:2026-08-03/robust_score",
+        "orders/channel=display_ads/daily:2026-08-04/value",
+        "orders/channel=display_ads/daily:2026-08-04/weekday_median",
+        "orders/channel=display_ads/daily:2026-08-04/robust_scale",
+        "orders/channel=display_ads/daily:2026-08-04/robust_score",
+        "orders/channel=display_ads/daily:2026-08-05/value",
+        "orders/channel=display_ads/daily:2026-08-05/weekday_median",
+        "orders/channel=display_ads/daily:2026-08-05/robust_scale",
+        "orders/channel=display_ads/daily:2026-08-05/robust_score",
+        "orders/channel=display_ads/daily:2026-08-06/value",
+        "orders/channel=display_ads/daily:2026-08-06/weekday_median",
+        "orders/channel=display_ads/daily:2026-08-06/robust_scale",
+        "orders/channel=display_ads/daily:2026-08-06/robust_score",
+        "orders/channel=display_ads/daily:2026-08-07/value",
+        "orders/channel=display_ads/daily:2026-08-07/weekday_median",
+        "orders/channel=display_ads/daily:2026-08-07/robust_scale",
+        "orders/channel=display_ads/daily:2026-08-07/robust_score",
+        "orders/channel=display_ads/daily:2026-08-08/value",
+        "orders/channel=display_ads/daily:2026-08-08/weekday_median",
+        "orders/channel=display_ads/daily:2026-08-08/robust_scale",
+        "orders/channel=display_ads/daily:2026-08-08/robust_score"
+      ],
+      "metric_id": "orders",
+      "rank": 11,
+      "selected_by": [
+        "contribution_share_pct",
+        "disappeared",
+        "screening_z"
+      ]
+    },
+    {
+      "cut": "channel=paid_search",
+      "fact_ids": [
+        "orders/channel=paid_search/complete_week:2026-08-08/value",
+        "orders/channel=paid_search/complete_week:2026-08-08/n_obs",
+        "orders/channel=paid_search/complete_week:2026-08-08/wow_delta",
+        "orders/channel=paid_search/complete_week:2026-08-08/wow_pct",
+        "orders/channel=paid_search/complete_week:2026-08-08/baseline_mean",
+        "orders/channel=paid_search/complete_week:2026-08-08/vs_baseline_pct",
+        "orders/channel=paid_search/complete_week:2026-08-08/screening_z",
+        "orders/channel=paid_search/complete_week:2026-08-08/contribution_share_pct",
+        "orders/channel=paid_search/complete_week:2026-08-01/value",
+        "orders/channel=paid_search/partial_week:2026-08-12/value",
+        "orders/channel=paid_search/partial_week:2026-08-12/slice_baseline_mean",
+        "orders/channel=paid_search/partial_week:2026-08-12/vs_slice_pct",
+        "orders/channel=paid_search/daily:2026-08-04/value",
+        "orders/channel=paid_search/daily:2026-08-04/weekday_median",
+        "orders/channel=paid_search/daily:2026-08-04/robust_scale",
+        "orders/channel=paid_search/daily:2026-08-04/robust_score",
+        "orders/channel=paid_search/daily:2026-08-05/value",
+        "orders/channel=paid_search/daily:2026-08-05/weekday_median",
+        "orders/channel=paid_search/daily:2026-08-05/robust_scale",
+        "orders/channel=paid_search/daily:2026-08-05/robust_score"
+      ],
+      "metric_id": "orders",
+      "rank": 12,
+      "selected_by": [
+        "screening_z"
+      ]
+    },
+    {
+      "cut": "channel=email",
+      "fact_ids": [
+        "orders/channel=email/complete_week:2026-08-08/value",
+        "orders/channel=email/complete_week:2026-08-08/n_obs",
+        "orders/channel=email/complete_week:2026-08-08/wow_delta",
+        "orders/channel=email/complete_week:2026-08-08/wow_pct",
+        "orders/channel=email/complete_week:2026-08-08/baseline_mean",
+        "orders/channel=email/complete_week:2026-08-08/vs_baseline_pct",
+        "orders/channel=email/complete_week:2026-08-08/screening_z",
+        "orders/channel=email/complete_week:2026-08-08/contribution_share_pct",
+        "orders/channel=email/complete_week:2026-08-01/value",
+        "orders/channel=email/partial_week:2026-08-12/value",
+        "orders/channel=email/partial_week:2026-08-12/slice_baseline_mean",
+        "orders/channel=email/partial_week:2026-08-12/vs_slice_pct",
+        "orders/channel=email/daily:2026-08-05/value",
+        "orders/channel=email/daily:2026-08-05/weekday_median",
+        "orders/channel=email/daily:2026-08-05/robust_scale",
+        "orders/channel=email/daily:2026-08-05/robust_score",
+        "orders/channel=email/daily:2026-08-07/value",
+        "orders/channel=email/daily:2026-08-07/weekday_median",
+        "orders/channel=email/daily:2026-08-07/robust_scale",
+        "orders/channel=email/daily:2026-08-07/robust_score"
+      ],
+      "metric_id": "orders",
+      "rank": 13,
+      "selected_by": [
+        "contribution_share_pct"
+      ]
+    },
+    {
+      "cut": "channel=marketplace",
+      "fact_ids": [
+        "orders/channel=marketplace/complete_week:2026-08-08/value",
+        "orders/channel=marketplace/complete_week:2026-08-08/n_obs",
+        "orders/channel=marketplace/complete_week:2026-08-08/wow_delta",
+        "orders/channel=marketplace/complete_week:2026-08-08/wow_pct",
+        "orders/channel=marketplace/complete_week:2026-08-08/baseline_mean",
+        "orders/channel=marketplace/complete_week:2026-08-08/vs_baseline_pct",
+        "orders/channel=marketplace/complete_week:2026-08-08/screening_z",
+        "orders/channel=marketplace/complete_week:2026-08-08/contribution_share_pct",
+        "orders/channel=marketplace/complete_week:2026-08-01/value",
+        "orders/channel=marketplace/partial_week:2026-08-12/value",
+        "orders/channel=marketplace/partial_week:2026-08-12/slice_baseline_mean",
+        "orders/channel=marketplace/partial_week:2026-08-12/vs_slice_pct",
+        "orders/channel=marketplace/daily:2026-08-02/value",
+        "orders/channel=marketplace/daily:2026-08-02/weekday_median",
+        "orders/channel=marketplace/daily:2026-08-02/robust_scale",
+        "orders/channel=marketplace/daily:2026-08-02/robust_score",
+        "orders/channel=marketplace/daily:2026-08-03/value",
+        "orders/channel=marketplace/daily:2026-08-03/weekday_median",
+        "orders/channel=marketplace/daily:2026-08-03/robust_scale",
+        "orders/channel=marketplace/daily:2026-08-03/robust_score",
+        "orders/channel=marketplace/daily:2026-08-04/value",
+        "orders/channel=marketplace/daily:2026-08-04/weekday_median",
+        "orders/channel=marketplace/daily:2026-08-04/robust_scale",
+        "orders/channel=marketplace/daily:2026-08-04/robust_score",
+        "orders/channel=marketplace/daily:2026-08-05/value",
+        "orders/channel=marketplace/daily:2026-08-05/weekday_median",
+        "orders/channel=marketplace/daily:2026-08-05/robust_scale",
+        "orders/channel=marketplace/daily:2026-08-05/robust_score",
+        "orders/channel=marketplace/daily:2026-08-06/value",
+        "orders/channel=marketplace/daily:2026-08-06/weekday_median",
+        "orders/channel=marketplace/daily:2026-08-06/robust_scale",
+        "orders/channel=marketplace/daily:2026-08-06/robust_score",
+        "orders/channel=marketplace/daily:2026-08-07/value",
+        "orders/channel=marketplace/daily:2026-08-07/weekday_median",
+        "orders/channel=marketplace/daily:2026-08-07/robust_scale",
+        "orders/channel=marketplace/daily:2026-08-07/robust_score",
+        "orders/channel=marketplace/daily:2026-08-08/value",
+        "orders/channel=marketplace/daily:2026-08-08/weekday_median",
+        "orders/channel=marketplace/daily:2026-08-08/robust_scale",
+        "orders/channel=marketplace/daily:2026-08-08/robust_score"
+      ],
+      "metric_id": "orders",
+      "rank": 14,
+      "selected_by": [
+        "newly_appeared"
+      ]
+    },
+    {
+      "cut": "overall",
+      "fact_ids": [
+        "sessions/overall/complete_week:2026-08-08/value",
+        "sessions/overall/complete_week:2026-08-08/n_obs",
+        "sessions/overall/complete_week:2026-08-08/wow_delta",
+        "sessions/overall/complete_week:2026-08-08/wow_pct",
+        "sessions/overall/complete_week:2026-08-08/baseline_mean",
+        "sessions/overall/complete_week:2026-08-08/vs_baseline_pct",
+        "sessions/overall/complete_week:2026-08-08/screening_z",
+        "sessions/overall/complete_week:2026-08-01/value",
+        "sessions/overall/partial_week:2026-08-12/value",
+        "sessions/overall/partial_week:2026-08-12/slice_baseline_mean",
+        "sessions/overall/partial_week:2026-08-12/vs_slice_pct",
+        "sessions/overall/daily:2026-08-05/value",
+        "sessions/overall/daily:2026-08-05/weekday_median",
+        "sessions/overall/daily:2026-08-05/robust_scale",
+        "sessions/overall/daily:2026-08-05/robust_score"
+      ],
+      "metric_id": "sessions",
+      "rank": 15,
+      "selected_by": [
+        "overall"
+      ]
+    },
+    {
+      "cut": "country=JP",
+      "fact_ids": [
+        "sessions/country=JP/complete_week:2026-08-08/value",
+        "sessions/country=JP/complete_week:2026-08-08/n_obs",
+        "sessions/country=JP/complete_week:2026-08-08/wow_delta",
+        "sessions/country=JP/complete_week:2026-08-08/wow_pct",
+        "sessions/country=JP/complete_week:2026-08-08/baseline_mean",
+        "sessions/country=JP/complete_week:2026-08-08/vs_baseline_pct",
+        "sessions/country=JP/complete_week:2026-08-08/screening_z",
+        "sessions/country=JP/complete_week:2026-08-08/contribution_share_pct",
+        "sessions/country=JP/complete_week:2026-08-01/value",
+        "sessions/country=JP/partial_week:2026-08-12/value",
+        "sessions/country=JP/partial_week:2026-08-12/slice_baseline_mean",
+        "sessions/country=JP/partial_week:2026-08-12/vs_slice_pct",
+        "sessions/country=JP/daily:2026-08-03/value",
+        "sessions/country=JP/daily:2026-08-03/weekday_median",
+        "sessions/country=JP/daily:2026-08-03/robust_scale",
+        "sessions/country=JP/daily:2026-08-03/robust_score",
+        "sessions/country=JP/daily:2026-08-05/value",
+        "sessions/country=JP/daily:2026-08-05/weekday_median",
+        "sessions/country=JP/daily:2026-08-05/robust_scale",
+        "sessions/country=JP/daily:2026-08-05/robust_score"
+      ],
+      "metric_id": "sessions",
+      "rank": 16,
+      "selected_by": [
+        "contribution_share_pct",
+        "screening_z"
+      ]
+    },
+    {
+      "cut": "country=DE",
+      "fact_ids": [
+        "sessions/country=DE/complete_week:2026-08-08/value",
+        "sessions/country=DE/complete_week:2026-08-08/n_obs",
+        "sessions/country=DE/complete_week:2026-08-08/wow_delta",
+        "sessions/country=DE/complete_week:2026-08-08/wow_pct",
+        "sessions/country=DE/complete_week:2026-08-08/baseline_mean",
+        "sessions/country=DE/complete_week:2026-08-08/vs_baseline_pct",
+        "sessions/country=DE/complete_week:2026-08-08/screening_z",
+        "sessions/country=DE/complete_week:2026-08-08/contribution_share_pct",
+        "sessions/country=DE/complete_week:2026-08-01/value",
+        "sessions/country=DE/partial_week:2026-08-12/value",
+        "sessions/country=DE/partial_week:2026-08-12/slice_baseline_mean",
+        "sessions/country=DE/partial_week:2026-08-12/vs_slice_pct",
+        "sessions/country=DE/daily:2026-08-06/value",
+        "sessions/country=DE/daily:2026-08-06/weekday_median",
+        "sessions/country=DE/daily:2026-08-06/robust_scale",
+        "sessions/country=DE/daily:2026-08-06/robust_score"
+      ],
+      "metric_id": "sessions",
+      "rank": 17,
+      "selected_by": [
+        "screening_z"
+      ]
+    },
+    {
+      "cut": "country=US",
+      "fact_ids": [
+        "sessions/country=US/complete_week:2026-08-08/value",
+        "sessions/country=US/complete_week:2026-08-08/n_obs",
+        "sessions/country=US/complete_week:2026-08-08/wow_delta",
+        "sessions/country=US/complete_week:2026-08-08/wow_pct",
+        "sessions/country=US/complete_week:2026-08-08/baseline_mean",
+        "sessions/country=US/complete_week:2026-08-08/vs_baseline_pct",
+        "sessions/country=US/complete_week:2026-08-08/screening_z",
+        "sessions/country=US/complete_week:2026-08-08/contribution_share_pct",
+        "sessions/country=US/complete_week:2026-08-01/value",
+        "sessions/country=US/partial_week:2026-08-12/value",
+        "sessions/country=US/partial_week:2026-08-12/slice_baseline_mean",
+        "sessions/country=US/partial_week:2026-08-12/vs_slice_pct"
+      ],
+      "metric_id": "sessions",
+      "rank": 18,
+      "selected_by": [
+        "contribution_share_pct"
+      ]
+    },
+    {
+      "cut": "channel=display_ads",
+      "fact_ids": [
+        "sessions/channel=display_ads/complete_week:2026-08-08/value",
+        "sessions/channel=display_ads/complete_week:2026-08-08/n_obs",
+        "sessions/channel=display_ads/complete_week:2026-08-08/wow_delta",
+        "sessions/channel=display_ads/complete_week:2026-08-08/wow_pct",
+        "sessions/channel=display_ads/complete_week:2026-08-08/baseline_mean",
+        "sessions/channel=display_ads/complete_week:2026-08-08/vs_baseline_pct",
+        "sessions/channel=display_ads/complete_week:2026-08-08/screening_z",
+        "sessions/channel=display_ads/complete_week:2026-08-08/contribution_share_pct",
+        "sessions/channel=display_ads/complete_week:2026-08-01/value",
+        "sessions/channel=display_ads/partial_week:2026-08-12/value",
+        "sessions/channel=display_ads/partial_week:2026-08-12/slice_baseline_mean",
+        "sessions/channel=display_ads/partial_week:2026-08-12/vs_slice_pct",
+        "sessions/channel=display_ads/daily:2026-08-02/value",
+        "sessions/channel=display_ads/daily:2026-08-02/weekday_median",
+        "sessions/channel=display_ads/daily:2026-08-02/robust_scale",
+        "sessions/channel=display_ads/daily:2026-08-02/robust_score",
+        "sessions/channel=display_ads/daily:2026-08-03/value",
+        "sessions/channel=display_ads/daily:2026-08-03/weekday_median",
+        "sessions/channel=display_ads/daily:2026-08-03/robust_scale",
+        "sessions/channel=display_ads/daily:2026-08-03/robust_score",
+        "sessions/channel=display_ads/daily:2026-08-04/value",
+        "sessions/channel=display_ads/daily:2026-08-04/weekday_median",
+        "sessions/channel=display_ads/daily:2026-08-04/robust_scale",
+        "sessions/channel=display_ads/daily:2026-08-04/robust_score",
+        "sessions/channel=display_ads/daily:2026-08-05/value",
+        "sessions/channel=display_ads/daily:2026-08-05/weekday_median",
+        "sessions/channel=display_ads/daily:2026-08-05/robust_scale",
+        "sessions/channel=display_ads/daily:2026-08-05/robust_score",
+        "sessions/channel=display_ads/daily:2026-08-06/value",
+        "sessions/channel=display_ads/daily:2026-08-06/weekday_median",
+        "sessions/channel=display_ads/daily:2026-08-06/robust_scale",
+        "sessions/channel=display_ads/daily:2026-08-06/robust_score",
+        "sessions/channel=display_ads/daily:2026-08-07/value",
+        "sessions/channel=display_ads/daily:2026-08-07/weekday_median",
+        "sessions/channel=display_ads/daily:2026-08-07/robust_scale",
+        "sessions/channel=display_ads/daily:2026-08-07/robust_score",
+        "sessions/channel=display_ads/daily:2026-08-08/value",
+        "sessions/channel=display_ads/daily:2026-08-08/weekday_median",
+        "sessions/channel=display_ads/daily:2026-08-08/robust_scale",
+        "sessions/channel=display_ads/daily:2026-08-08/robust_score"
+      ],
+      "metric_id": "sessions",
+      "rank": 19,
+      "selected_by": [
+        "contribution_share_pct",
+        "disappeared",
+        "screening_z"
+      ]
+    },
+    {
+      "cut": "channel=marketplace",
+      "fact_ids": [
+        "sessions/channel=marketplace/complete_week:2026-08-08/value",
+        "sessions/channel=marketplace/complete_week:2026-08-08/n_obs",
+        "sessions/channel=marketplace/complete_week:2026-08-08/wow_delta",
+        "sessions/channel=marketplace/complete_week:2026-08-08/wow_pct",
+        "sessions/channel=marketplace/complete_week:2026-08-08/baseline_mean",
+        "sessions/channel=marketplace/complete_week:2026-08-08/vs_baseline_pct",
+        "sessions/channel=marketplace/complete_week:2026-08-08/screening_z",
+        "sessions/channel=marketplace/complete_week:2026-08-08/contribution_share_pct",
+        "sessions/channel=marketplace/complete_week:2026-08-01/value",
+        "sessions/channel=marketplace/partial_week:2026-08-12/value",
+        "sessions/channel=marketplace/partial_week:2026-08-12/slice_baseline_mean",
+        "sessions/channel=marketplace/partial_week:2026-08-12/vs_slice_pct",
+        "sessions/channel=marketplace/daily:2026-08-02/value",
+        "sessions/channel=marketplace/daily:2026-08-02/weekday_median",
+        "sessions/channel=marketplace/daily:2026-08-02/robust_scale",
+        "sessions/channel=marketplace/daily:2026-08-02/robust_score",
+        "sessions/channel=marketplace/daily:2026-08-03/value",
+        "sessions/channel=marketplace/daily:2026-08-03/weekday_median",
+        "sessions/channel=marketplace/daily:2026-08-03/robust_scale",
+        "sessions/channel=marketplace/daily:2026-08-03/robust_score",
+        "sessions/channel=marketplace/daily:2026-08-04/value",
+        "sessions/channel=marketplace/daily:2026-08-04/weekday_median",
+        "sessions/channel=marketplace/daily:2026-08-04/robust_scale",
+        "sessions/channel=marketplace/daily:2026-08-04/robust_score",
+        "sessions/channel=marketplace/daily:2026-08-05/value",
+        "sessions/channel=marketplace/daily:2026-08-05/weekday_median",
+        "sessions/channel=marketplace/daily:2026-08-05/robust_scale",
+        "sessions/channel=marketplace/daily:2026-08-05/robust_score",
+        "sessions/channel=marketplace/daily:2026-08-06/value",
+        "sessions/channel=marketplace/daily:2026-08-06/weekday_median",
+        "sessions/channel=marketplace/daily:2026-08-06/robust_scale",
+        "sessions/channel=marketplace/daily:2026-08-06/robust_score",
+        "sessions/channel=marketplace/daily:2026-08-07/value",
+        "sessions/channel=marketplace/daily:2026-08-07/weekday_median",
+        "sessions/channel=marketplace/daily:2026-08-07/robust_scale",
+        "sessions/channel=marketplace/daily:2026-08-07/robust_score",
+        "sessions/channel=marketplace/daily:2026-08-08/value",
+        "sessions/channel=marketplace/daily:2026-08-08/weekday_median",
+        "sessions/channel=marketplace/daily:2026-08-08/robust_scale",
+        "sessions/channel=marketplace/daily:2026-08-08/robust_score"
+      ],
+      "metric_id": "sessions",
+      "rank": 20,
+      "selected_by": [
+        "contribution_share_pct",
+        "newly_appeared"
+      ]
+    },
+    {
+      "cut": "channel=email",
+      "fact_ids": [
+        "sessions/channel=email/complete_week:2026-08-08/value",
+        "sessions/channel=email/complete_week:2026-08-08/n_obs",
+        "sessions/channel=email/complete_week:2026-08-08/wow_delta",
+        "sessions/channel=email/complete_week:2026-08-08/wow_pct",
+        "sessions/channel=email/complete_week:2026-08-08/baseline_mean",
+        "sessions/channel=email/complete_week:2026-08-08/vs_baseline_pct",
+        "sessions/channel=email/complete_week:2026-08-08/screening_z",
+        "sessions/channel=email/complete_week:2026-08-08/contribution_share_pct",
+        "sessions/channel=email/complete_week:2026-08-01/value",
+        "sessions/channel=email/partial_week:2026-08-12/value",
+        "sessions/channel=email/partial_week:2026-08-12/slice_baseline_mean",
+        "sessions/channel=email/partial_week:2026-08-12/vs_slice_pct",
+        "sessions/channel=email/daily:2026-08-02/value",
+        "sessions/channel=email/daily:2026-08-02/weekday_median",
+        "sessions/channel=email/daily:2026-08-02/robust_scale",
+        "sessions/channel=email/daily:2026-08-02/robust_score",
+        "sessions/channel=email/daily:2026-08-03/value",
+        "sessions/channel=email/daily:2026-08-03/weekday_median",
+        "sessions/channel=email/daily:2026-08-03/robust_scale",
+        "sessions/channel=email/daily:2026-08-03/robust_score",
+        "sessions/channel=email/daily:2026-08-05/value",
+        "sessions/channel=email/daily:2026-08-05/weekday_median",
+        "sessions/channel=email/daily:2026-08-05/robust_scale",
+        "sessions/channel=email/daily:2026-08-05/robust_score",
+        "sessions/channel=email/daily:2026-08-07/value",
+        "sessions/channel=email/daily:2026-08-07/weekday_median",
+        "sessions/channel=email/daily:2026-08-07/robust_scale",
+        "sessions/channel=email/daily:2026-08-07/robust_score",
+        "sessions/channel=email/daily:2026-08-08/value",
+        "sessions/channel=email/daily:2026-08-08/weekday_median",
+        "sessions/channel=email/daily:2026-08-08/robust_scale",
+        "sessions/channel=email/daily:2026-08-08/robust_score"
+      ],
+      "metric_id": "sessions",
+      "rank": 21,
+      "selected_by": [
+        "screening_z"
+      ]
+    },
+    {
+      "cut": "overall",
+      "fact_ids": [
+        "conversion_rate/overall/complete_week:2026-08-08/value",
+        "conversion_rate/overall/complete_week:2026-08-08/n_obs",
+        "conversion_rate/overall/complete_week:2026-08-08/wow_delta",
+        "conversion_rate/overall/complete_week:2026-08-08/wow_pct",
+        "conversion_rate/overall/complete_week:2026-08-08/baseline_mean",
+        "conversion_rate/overall/complete_week:2026-08-08/vs_baseline_pct",
+        "conversion_rate/overall/complete_week:2026-08-08/screening_z",
+        "conversion_rate/overall/complete_week:2026-08-08/numerator",
+        "conversion_rate/overall/complete_week:2026-08-08/denominator",
+        "conversion_rate/overall/complete_week:2026-08-08/rate_z",
+        "conversion_rate/overall/complete_week:2026-08-01/value",
+        "conversion_rate/overall/partial_week:2026-08-12/value",
+        "conversion_rate/overall/partial_week:2026-08-12/slice_baseline_mean",
+        "conversion_rate/overall/partial_week:2026-08-12/vs_slice_pct",
+        "conversion_rate/overall/daily:2026-08-04/value",
+        "conversion_rate/overall/daily:2026-08-04/weekday_median",
+        "conversion_rate/overall/daily:2026-08-04/robust_scale",
+        "conversion_rate/overall/daily:2026-08-04/robust_score",
+        "conversion_rate/overall/daily:2026-08-05/value",
+        "conversion_rate/overall/daily:2026-08-05/weekday_median",
+        "conversion_rate/overall/daily:2026-08-05/robust_scale",
+        "conversion_rate/overall/daily:2026-08-05/robust_score"
+      ],
+      "metric_id": "conversion_rate",
+      "rank": 22,
+      "selected_by": [
+        "overall"
+      ]
+    },
+    {
+      "cut": "country=JP",
+      "fact_ids": [
+        "conversion_rate/country=JP/complete_week:2026-08-08/value",
+        "conversion_rate/country=JP/complete_week:2026-08-08/n_obs",
+        "conversion_rate/country=JP/complete_week:2026-08-08/wow_delta",
+        "conversion_rate/country=JP/complete_week:2026-08-08/wow_pct",
+        "conversion_rate/country=JP/complete_week:2026-08-08/baseline_mean",
+        "conversion_rate/country=JP/complete_week:2026-08-08/vs_baseline_pct",
+        "conversion_rate/country=JP/complete_week:2026-08-08/screening_z",
+        "conversion_rate/country=JP/complete_week:2026-08-08/numerator",
+        "conversion_rate/country=JP/complete_week:2026-08-08/denominator",
+        "conversion_rate/country=JP/complete_week:2026-08-08/rate_z",
+        "conversion_rate/country=JP/complete_week:2026-08-01/value",
+        "conversion_rate/country=JP/partial_week:2026-08-12/value",
+        "conversion_rate/country=JP/partial_week:2026-08-12/slice_baseline_mean",
+        "conversion_rate/country=JP/partial_week:2026-08-12/vs_slice_pct",
+        "conversion_rate/country=JP/daily:2026-08-04/value",
+        "conversion_rate/country=JP/daily:2026-08-04/weekday_median",
+        "conversion_rate/country=JP/daily:2026-08-04/robust_scale",
+        "conversion_rate/country=JP/daily:2026-08-04/robust_score",
+        "conversion_rate/country=JP/daily:2026-08-05/value",
+        "conversion_rate/country=JP/daily:2026-08-05/weekday_median",
+        "conversion_rate/country=JP/daily:2026-08-05/robust_scale",
+        "conversion_rate/country=JP/daily:2026-08-05/robust_score"
+      ],
+      "metric_id": "conversion_rate",
+      "rank": 23,
+      "selected_by": [
+        "screening_z",
+        "wow_pct"
+      ]
+    },
+    {
+      "cut": "country=UK",
+      "fact_ids": [
+        "conversion_rate/country=UK/complete_week:2026-08-08/value",
+        "conversion_rate/country=UK/complete_week:2026-08-08/n_obs",
+        "conversion_rate/country=UK/complete_week:2026-08-08/wow_delta",
+        "conversion_rate/country=UK/complete_week:2026-08-08/wow_pct",
+        "conversion_rate/country=UK/complete_week:2026-08-08/baseline_mean",
+        "conversion_rate/country=UK/complete_week:2026-08-08/vs_baseline_pct",
+        "conversion_rate/country=UK/complete_week:2026-08-08/screening_z",
+        "conversion_rate/country=UK/complete_week:2026-08-08/numerator",
+        "conversion_rate/country=UK/complete_week:2026-08-08/denominator",
+        "conversion_rate/country=UK/complete_week:2026-08-08/rate_z",
+        "conversion_rate/country=UK/complete_week:2026-08-01/value",
+        "conversion_rate/country=UK/partial_week:2026-08-12/value",
+        "conversion_rate/country=UK/partial_week:2026-08-12/slice_baseline_mean",
+        "conversion_rate/country=UK/partial_week:2026-08-12/vs_slice_pct",
+        "conversion_rate/country=UK/daily:2026-08-04/value",
+        "conversion_rate/country=UK/daily:2026-08-04/weekday_median",
+        "conversion_rate/country=UK/daily:2026-08-04/robust_scale",
+        "conversion_rate/country=UK/daily:2026-08-04/robust_score",
+        "conversion_rate/country=UK/daily:2026-08-06/value",
+        "conversion_rate/country=UK/daily:2026-08-06/weekday_median",
+        "conversion_rate/country=UK/daily:2026-08-06/robust_scale",
+        "conversion_rate/country=UK/daily:2026-08-06/robust_score"
+      ],
+      "metric_id": "conversion_rate",
+      "rank": 24,
+      "selected_by": [
+        "screening_z"
+      ]
+    },
+    {
+      "cut": "country=DE",
+      "fact_ids": [
+        "conversion_rate/country=DE/complete_week:2026-08-08/value",
+        "conversion_rate/country=DE/complete_week:2026-08-08/n_obs",
+        "conversion_rate/country=DE/complete_week:2026-08-08/wow_delta",
+        "conversion_rate/country=DE/complete_week:2026-08-08/wow_pct",
+        "conversion_rate/country=DE/complete_week:2026-08-08/baseline_mean",
+        "conversion_rate/country=DE/complete_week:2026-08-08/vs_baseline_pct",
+        "conversion_rate/country=DE/complete_week:2026-08-08/screening_z",
+        "conversion_rate/country=DE/complete_week:2026-08-08/numerator",
+        "conversion_rate/country=DE/complete_week:2026-08-08/denominator",
+        "conversion_rate/country=DE/complete_week:2026-08-08/rate_z",
+        "conversion_rate/country=DE/complete_week:2026-08-01/value",
+        "conversion_rate/country=DE/partial_week:2026-08-12/value",
+        "conversion_rate/country=DE/partial_week:2026-08-12/slice_baseline_mean",
+        "conversion_rate/country=DE/partial_week:2026-08-12/vs_slice_pct",
+        "conversion_rate/country=DE/daily:2026-08-02/value",
+        "conversion_rate/country=DE/daily:2026-08-02/weekday_median",
+        "conversion_rate/country=DE/daily:2026-08-02/robust_scale",
+        "conversion_rate/country=DE/daily:2026-08-02/robust_score"
+      ],
+      "metric_id": "conversion_rate",
+      "rank": 25,
+      "selected_by": [
+        "wow_pct"
+      ]
+    },
+    {
+      "cut": "channel=paid_search",
+      "fact_ids": [
+        "conversion_rate/channel=paid_search/complete_week:2026-08-08/value",
+        "conversion_rate/channel=paid_search/complete_week:2026-08-08/n_obs",
+        "conversion_rate/channel=paid_search/complete_week:2026-08-08/wow_delta",
+        "conversion_rate/channel=paid_search/complete_week:2026-08-08/wow_pct",
+        "conversion_rate/channel=paid_search/complete_week:2026-08-08/baseline_mean",
+        "conversion_rate/channel=paid_search/complete_week:2026-08-08/vs_baseline_pct",
+        "conversion_rate/channel=paid_search/complete_week:2026-08-08/screening_z",
+        "conversion_rate/channel=paid_search/complete_week:2026-08-08/numerator",
+        "conversion_rate/channel=paid_search/complete_week:2026-08-08/denominator",
+        "conversion_rate/channel=paid_search/complete_week:2026-08-08/rate_z",
+        "conversion_rate/channel=paid_search/complete_week:2026-08-01/value",
+        "conversion_rate/channel=paid_search/partial_week:2026-08-12/value",
+        "conversion_rate/channel=paid_search/partial_week:2026-08-12/slice_baseline_mean",
+        "conversion_rate/channel=paid_search/partial_week:2026-08-12/vs_slice_pct",
+        "conversion_rate/channel=paid_search/daily:2026-08-03/value",
+        "conversion_rate/channel=paid_search/daily:2026-08-03/weekday_median",
+        "conversion_rate/channel=paid_search/daily:2026-08-03/robust_scale",
+        "conversion_rate/channel=paid_search/daily:2026-08-03/robust_score",
+        "conversion_rate/channel=paid_search/daily:2026-08-06/value",
+        "conversion_rate/channel=paid_search/daily:2026-08-06/weekday_median",
+        "conversion_rate/channel=paid_search/daily:2026-08-06/robust_scale",
+        "conversion_rate/channel=paid_search/daily:2026-08-06/robust_score",
+        "conversion_rate/channel=paid_search/daily:2026-08-08/value",
+        "conversion_rate/channel=paid_search/daily:2026-08-08/weekday_median",
+        "conversion_rate/channel=paid_search/daily:2026-08-08/robust_scale",
+        "conversion_rate/channel=paid_search/daily:2026-08-08/robust_score"
+      ],
+      "metric_id": "conversion_rate",
+      "rank": 26,
+      "selected_by": [
+        "screening_z",
+        "wow_pct"
+      ]
+    },
+    {
+      "cut": "channel=affiliate",
+      "fact_ids": [
+        "conversion_rate/channel=affiliate/complete_week:2026-08-08/value",
+        "conversion_rate/channel=affiliate/complete_week:2026-08-08/n_obs",
+        "conversion_rate/channel=affiliate/complete_week:2026-08-08/wow_delta",
+        "conversion_rate/channel=affiliate/complete_week:2026-08-08/wow_pct",
+        "conversion_rate/channel=affiliate/complete_week:2026-08-08/baseline_mean",
+        "conversion_rate/channel=affiliate/complete_week:2026-08-08/vs_baseline_pct",
+        "conversion_rate/channel=affiliate/complete_week:2026-08-08/screening_z",
+        "conversion_rate/channel=affiliate/complete_week:2026-08-08/numerator",
+        "conversion_rate/channel=affiliate/complete_week:2026-08-08/denominator",
+        "conversion_rate/channel=affiliate/complete_week:2026-08-08/rate_z",
+        "conversion_rate/channel=affiliate/complete_week:2026-08-01/value",
+        "conversion_rate/channel=affiliate/partial_week:2026-08-12/value",
+        "conversion_rate/channel=affiliate/partial_week:2026-08-12/slice_baseline_mean",
+        "conversion_rate/channel=affiliate/partial_week:2026-08-12/vs_slice_pct",
+        "conversion_rate/channel=affiliate/daily:2026-08-05/value",
+        "conversion_rate/channel=affiliate/daily:2026-08-05/weekday_median",
+        "conversion_rate/channel=affiliate/daily:2026-08-05/robust_scale",
+        "conversion_rate/channel=affiliate/daily:2026-08-05/robust_score"
+      ],
+      "metric_id": "conversion_rate",
+      "rank": 27,
+      "selected_by": [
+        "screening_z",
+        "wow_pct"
+      ]
+    },
+    {
+      "cut": "channel=display_ads",
+      "fact_ids": [
+        "conversion_rate/channel=display_ads/complete_week:2026-08-08/value",
+        "conversion_rate/channel=display_ads/complete_week:2026-08-08/n_obs",
+        "conversion_rate/channel=display_ads/complete_week:2026-08-08/wow_delta",
+        "conversion_rate/channel=display_ads/complete_week:2026-08-08/wow_pct",
+        "conversion_rate/channel=display_ads/complete_week:2026-08-08/baseline_mean",
+        "conversion_rate/channel=display_ads/complete_week:2026-08-08/vs_baseline_pct",
+        "conversion_rate/channel=display_ads/complete_week:2026-08-08/screening_z",
+        "conversion_rate/channel=display_ads/complete_week:2026-08-08/numerator",
+        "conversion_rate/channel=display_ads/complete_week:2026-08-08/denominator",
+        "conversion_rate/channel=display_ads/complete_week:2026-08-08/rate_z",
+        "conversion_rate/channel=display_ads/complete_week:2026-08-01/value",
+        "conversion_rate/channel=display_ads/partial_week:2026-08-12/value",
+        "conversion_rate/channel=display_ads/partial_week:2026-08-12/slice_baseline_mean",
+        "conversion_rate/channel=display_ads/partial_week:2026-08-12/vs_slice_pct"
+      ],
+      "metric_id": "conversion_rate",
+      "rank": 28,
+      "selected_by": [
+        "disappeared"
+      ]
+    },
+    {
+      "cut": "channel=marketplace",
+      "fact_ids": [
+        "conversion_rate/channel=marketplace/complete_week:2026-08-08/value",
+        "conversion_rate/channel=marketplace/complete_week:2026-08-08/n_obs",
+        "conversion_rate/channel=marketplace/complete_week:2026-08-08/wow_delta",
+        "conversion_rate/channel=marketplace/complete_week:2026-08-08/wow_pct",
+        "conversion_rate/channel=marketplace/complete_week:2026-08-08/baseline_mean",
+        "conversion_rate/channel=marketplace/complete_week:2026-08-08/vs_baseline_pct",
+        "conversion_rate/channel=marketplace/complete_week:2026-08-08/screening_z",
+        "conversion_rate/channel=marketplace/complete_week:2026-08-08/numerator",
+        "conversion_rate/channel=marketplace/complete_week:2026-08-08/denominator",
+        "conversion_rate/channel=marketplace/complete_week:2026-08-08/rate_z",
+        "conversion_rate/channel=marketplace/complete_week:2026-08-01/value",
+        "conversion_rate/channel=marketplace/partial_week:2026-08-12/value",
+        "conversion_rate/channel=marketplace/partial_week:2026-08-12/slice_baseline_mean",
+        "conversion_rate/channel=marketplace/partial_week:2026-08-12/vs_slice_pct"
+      ],
+      "metric_id": "conversion_rate",
+      "rank": 29,
+      "selected_by": [
+        "newly_appeared"
+      ]
+    },
+    {
+      "cut": "overall",
+      "fact_ids": [
+        "aov/overall/complete_week:2026-08-08/value",
+        "aov/overall/complete_week:2026-08-08/n_obs",
+        "aov/overall/complete_week:2026-08-08/wow_delta",
+        "aov/overall/complete_week:2026-08-08/wow_pct",
+        "aov/overall/complete_week:2026-08-08/baseline_mean",
+        "aov/overall/complete_week:2026-08-08/vs_baseline_pct",
+        "aov/overall/complete_week:2026-08-08/screening_z",
+        "aov/overall/complete_week:2026-08-08/numerator",
+        "aov/overall/complete_week:2026-08-08/denominator",
+        "aov/overall/complete_week:2026-08-01/value",
+        "aov/overall/partial_week:2026-08-12/value",
+        "aov/overall/partial_week:2026-08-12/slice_baseline_mean",
+        "aov/overall/partial_week:2026-08-12/vs_slice_pct",
+        "aov/overall/daily:2026-08-05/value",
+        "aov/overall/daily:2026-08-05/weekday_median",
+        "aov/overall/daily:2026-08-05/robust_scale",
+        "aov/overall/daily:2026-08-05/robust_score"
+      ],
+      "metric_id": "aov",
+      "rank": 30,
+      "selected_by": [
+        "overall"
+      ]
+    },
+    {
+      "cut": "country=JP",
+      "fact_ids": [
+        "aov/country=JP/complete_week:2026-08-08/value",
+        "aov/country=JP/complete_week:2026-08-08/n_obs",
+        "aov/country=JP/complete_week:2026-08-08/wow_delta",
+        "aov/country=JP/complete_week:2026-08-08/wow_pct",
+        "aov/country=JP/complete_week:2026-08-08/baseline_mean",
+        "aov/country=JP/complete_week:2026-08-08/vs_baseline_pct",
+        "aov/country=JP/complete_week:2026-08-08/screening_z",
+        "aov/country=JP/complete_week:2026-08-08/numerator",
+        "aov/country=JP/complete_week:2026-08-08/denominator",
+        "aov/country=JP/complete_week:2026-08-01/value",
+        "aov/country=JP/partial_week:2026-08-12/value",
+        "aov/country=JP/partial_week:2026-08-12/slice_baseline_mean",
+        "aov/country=JP/partial_week:2026-08-12/vs_slice_pct",
+        "aov/country=JP/daily:2026-08-03/value",
+        "aov/country=JP/daily:2026-08-03/weekday_median",
+        "aov/country=JP/daily:2026-08-03/robust_scale",
+        "aov/country=JP/daily:2026-08-03/robust_score",
+        "aov/country=JP/daily:2026-08-05/value",
+        "aov/country=JP/daily:2026-08-05/weekday_median",
+        "aov/country=JP/daily:2026-08-05/robust_scale",
+        "aov/country=JP/daily:2026-08-05/robust_score"
+      ],
+      "metric_id": "aov",
+      "rank": 31,
+      "selected_by": [
+        "screening_z",
+        "wow_pct"
+      ]
+    },
+    {
+      "cut": "country=US",
+      "fact_ids": [
+        "aov/country=US/complete_week:2026-08-08/value",
+        "aov/country=US/complete_week:2026-08-08/n_obs",
+        "aov/country=US/complete_week:2026-08-08/wow_delta",
+        "aov/country=US/complete_week:2026-08-08/wow_pct",
+        "aov/country=US/complete_week:2026-08-08/baseline_mean",
+        "aov/country=US/complete_week:2026-08-08/vs_baseline_pct",
+        "aov/country=US/complete_week:2026-08-08/screening_z",
+        "aov/country=US/complete_week:2026-08-08/numerator",
+        "aov/country=US/complete_week:2026-08-08/denominator",
+        "aov/country=US/complete_week:2026-08-01/value",
+        "aov/country=US/partial_week:2026-08-12/value",
+        "aov/country=US/partial_week:2026-08-12/slice_baseline_mean",
+        "aov/country=US/partial_week:2026-08-12/vs_slice_pct"
+      ],
+      "metric_id": "aov",
+      "rank": 32,
+      "selected_by": [
+        "screening_z",
+        "wow_pct"
+      ]
+    },
+    {
+      "cut": "channel=affiliate",
+      "fact_ids": [
+        "aov/channel=affiliate/complete_week:2026-08-08/value",
+        "aov/channel=affiliate/complete_week:2026-08-08/n_obs",
+        "aov/channel=affiliate/complete_week:2026-08-08/wow_delta",
+        "aov/channel=affiliate/complete_week:2026-08-08/wow_pct",
+        "aov/channel=affiliate/complete_week:2026-08-08/baseline_mean",
+        "aov/channel=affiliate/complete_week:2026-08-08/vs_baseline_pct",
+        "aov/channel=affiliate/complete_week:2026-08-08/screening_z",
+        "aov/channel=affiliate/complete_week:2026-08-08/numerator",
+        "aov/channel=affiliate/complete_week:2026-08-08/denominator",
+        "aov/channel=affiliate/complete_week:2026-08-01/value",
+        "aov/channel=affiliate/partial_week:2026-08-12/value",
+        "aov/channel=affiliate/partial_week:2026-08-12/slice_baseline_mean",
+        "aov/channel=affiliate/partial_week:2026-08-12/vs_slice_pct",
+        "aov/channel=affiliate/daily:2026-08-02/value",
+        "aov/channel=affiliate/daily:2026-08-02/weekday_median",
+        "aov/channel=affiliate/daily:2026-08-02/robust_scale",
+        "aov/channel=affiliate/daily:2026-08-02/robust_score",
+        "aov/channel=affiliate/daily:2026-08-03/value",
+        "aov/channel=affiliate/daily:2026-08-03/weekday_median",
+        "aov/channel=affiliate/daily:2026-08-03/robust_scale",
+        "aov/channel=affiliate/daily:2026-08-03/robust_score",
+        "aov/channel=affiliate/daily:2026-08-04/value",
+        "aov/channel=affiliate/daily:2026-08-04/weekday_median",
+        "aov/channel=affiliate/daily:2026-08-04/robust_scale",
+        "aov/channel=affiliate/daily:2026-08-04/robust_score",
+        "aov/channel=affiliate/daily:2026-08-05/value",
+        "aov/channel=affiliate/daily:2026-08-05/weekday_median",
+        "aov/channel=affiliate/daily:2026-08-05/robust_scale",
+        "aov/channel=affiliate/daily:2026-08-05/robust_score",
+        "aov/channel=affiliate/daily:2026-08-06/value",
+        "aov/channel=affiliate/daily:2026-08-06/weekday_median",
+        "aov/channel=affiliate/daily:2026-08-06/robust_scale",
+        "aov/channel=affiliate/daily:2026-08-06/robust_score",
+        "aov/channel=affiliate/daily:2026-08-07/value",
+        "aov/channel=affiliate/daily:2026-08-07/weekday_median",
+        "aov/channel=affiliate/daily:2026-08-07/robust_scale",
+        "aov/channel=affiliate/daily:2026-08-07/robust_score",
+        "aov/channel=affiliate/daily:2026-08-08/value",
+        "aov/channel=affiliate/daily:2026-08-08/weekday_median",
+        "aov/channel=affiliate/daily:2026-08-08/robust_scale",
+        "aov/channel=affiliate/daily:2026-08-08/robust_score"
+      ],
+      "metric_id": "aov",
+      "rank": 33,
+      "selected_by": [
+        "screening_z",
+        "wow_pct"
+      ]
+    },
+    {
+      "cut": "channel=paid_search",
+      "fact_ids": [
+        "aov/channel=paid_search/complete_week:2026-08-08/value",
+        "aov/channel=paid_search/complete_week:2026-08-08/n_obs",
+        "aov/channel=paid_search/complete_week:2026-08-08/wow_delta",
+        "aov/channel=paid_search/complete_week:2026-08-08/wow_pct",
+        "aov/channel=paid_search/complete_week:2026-08-08/baseline_mean",
+        "aov/channel=paid_search/complete_week:2026-08-08/vs_baseline_pct",
+        "aov/channel=paid_search/complete_week:2026-08-08/screening_z",
+        "aov/channel=paid_search/complete_week:2026-08-08/numerator",
+        "aov/channel=paid_search/complete_week:2026-08-08/denominator",
+        "aov/channel=paid_search/complete_week:2026-08-01/value",
+        "aov/channel=paid_search/partial_week:2026-08-12/value",
+        "aov/channel=paid_search/partial_week:2026-08-12/slice_baseline_mean",
+        "aov/channel=paid_search/partial_week:2026-08-12/vs_slice_pct",
+        "aov/channel=paid_search/daily:2026-08-05/value",
+        "aov/channel=paid_search/daily:2026-08-05/weekday_median",
+        "aov/channel=paid_search/daily:2026-08-05/robust_scale",
+        "aov/channel=paid_search/daily:2026-08-05/robust_score",
+        "aov/channel=paid_search/daily:2026-08-08/value",
+        "aov/channel=paid_search/daily:2026-08-08/weekday_median",
+        "aov/channel=paid_search/daily:2026-08-08/robust_scale",
+        "aov/channel=paid_search/daily:2026-08-08/robust_score"
+      ],
+      "metric_id": "aov",
+      "rank": 34,
+      "selected_by": [
+        "screening_z"
+      ]
+    },
+    {
+      "cut": "channel=organic",
+      "fact_ids": [
+        "aov/channel=organic/complete_week:2026-08-08/value",
+        "aov/channel=organic/complete_week:2026-08-08/n_obs",
+        "aov/channel=organic/complete_week:2026-08-08/wow_delta",
+        "aov/channel=organic/complete_week:2026-08-08/wow_pct",
+        "aov/channel=organic/complete_week:2026-08-08/baseline_mean",
+        "aov/channel=organic/complete_week:2026-08-08/vs_baseline_pct",
+        "aov/channel=organic/complete_week:2026-08-08/screening_z",
+        "aov/channel=organic/complete_week:2026-08-08/numerator",
+        "aov/channel=organic/complete_week:2026-08-08/denominator",
+        "aov/channel=organic/complete_week:2026-08-01/value",
+        "aov/channel=organic/partial_week:2026-08-12/value",
+        "aov/channel=organic/partial_week:2026-08-12/slice_baseline_mean",
+        "aov/channel=organic/partial_week:2026-08-12/vs_slice_pct"
+      ],
+      "metric_id": "aov",
+      "rank": 35,
+      "selected_by": [
+        "wow_pct"
+      ]
+    },
+    {
+      "cut": "channel=display_ads",
+      "fact_ids": [
+        "aov/channel=display_ads/complete_week:2026-08-08/value",
+        "aov/channel=display_ads/complete_week:2026-08-08/n_obs",
+        "aov/channel=display_ads/complete_week:2026-08-08/wow_delta",
+        "aov/channel=display_ads/complete_week:2026-08-08/wow_pct",
+        "aov/channel=display_ads/complete_week:2026-08-08/baseline_mean",
+        "aov/channel=display_ads/complete_week:2026-08-08/vs_baseline_pct",
+        "aov/channel=display_ads/complete_week:2026-08-08/screening_z",
+        "aov/channel=display_ads/complete_week:2026-08-08/numerator",
+        "aov/channel=display_ads/complete_week:2026-08-08/denominator",
+        "aov/channel=display_ads/complete_week:2026-08-01/value",
+        "aov/channel=display_ads/partial_week:2026-08-12/value",
+        "aov/channel=display_ads/partial_week:2026-08-12/slice_baseline_mean",
+        "aov/channel=display_ads/partial_week:2026-08-12/vs_slice_pct"
+      ],
+      "metric_id": "aov",
+      "rank": 36,
+      "selected_by": [
+        "disappeared"
+      ]
+    }
+  ],
+  "validation": {
+    "claims": [
+      {
+        "claim_index": 0,
+        "claimed_value": 0.0,
+        "computed_value": 0.0,
+        "fact_id": "gmv/channel=display_ads/complete_week:2026-08-08/value",
+        "highlight_index": 0,
+        "status": "bound",
+        "tolerance": 0.5
+      },
+      {
+        "claim_index": 1,
+        "claimed_value": 45089.280000000006,
+        "computed_value": 45089.280000000006,
+        "fact_id": "gmv/channel=display_ads/complete_week:2026-08-08/baseline_mean",
+        "highlight_index": 0,
+        "status": "bound",
+        "tolerance": 0.5
+      },
+      {
+        "claim_index": 0,
+        "claimed_value": 43446.7,
+        "computed_value": 43446.7,
+        "fact_id": "gmv/channel=marketplace/complete_week:2026-08-08/value",
+        "highlight_index": 1,
+        "status": "bound",
+        "tolerance": 0.5
+      },
+      {
+        "claim_index": 0,
+        "claimed_value": 458959.37999999995,
+        "computed_value": 458959.37999999995,
+        "fact_id": "gmv/overall/daily:2026-08-05/value",
+        "highlight_index": 2,
+        "status": "bound",
+        "tolerance": 0.5
+      },
+      {
+        "claim_index": 1,
+        "claimed_value": 37.68927350629918,
+        "computed_value": 37.68927350629918,
+        "fact_id": "gmv/overall/daily:2026-08-05/robust_score",
+        "highlight_index": 2,
+        "status": "bound",
+        "tolerance": 0.005
+      },
+      {
+        "claim_index": 2,
+        "claimed_value": 333329.79999999993,
+        "computed_value": 333329.79999999993,
+        "fact_id": "gmv/overall/daily:2026-08-05/weekday_median",
+        "highlight_index": 2,
+        "status": "bound",
+        "tolerance": 0.5
+      },
+      {
+        "claim_index": 0,
+        "claimed_value": 4601.0,
+        "computed_value": 4601.0,
+        "fact_id": "orders/country=DE/complete_week:2026-08-08/value",
+        "highlight_index": 3,
+        "status": "bound",
+        "tolerance": 0.5
+      },
+      {
+        "claim_index": 1,
+        "claimed_value": -10.276911076443056,
+        "computed_value": -10.276911076443056,
+        "fact_id": "orders/country=DE/complete_week:2026-08-08/wow_pct",
+        "highlight_index": 3,
+        "status": "bound",
+        "tolerance": 0.05
+      },
+      {
+        "claim_index": 2,
+        "claimed_value": -527.0,
+        "computed_value": -527.0,
+        "fact_id": "orders/country=DE/complete_week:2026-08-08/wow_delta",
+        "highlight_index": 3,
+        "status": "bound",
+        "tolerance": 0.5
+      },
+      {
+        "claim_index": 3,
+        "claimed_value": 5095.75,
+        "computed_value": 5095.75,
+        "fact_id": "orders/country=DE/complete_week:2026-08-08/baseline_mean",
+        "highlight_index": 3,
+        "status": "bound",
+        "tolerance": 0.5
+      },
+      {
+        "claim_index": 4,
+        "claimed_value": -4.273949166820938,
+        "computed_value": -4.273949166820938,
+        "fact_id": "orders/country=DE/complete_week:2026-08-08/screening_z",
+        "highlight_index": 3,
+        "status": "bound",
+        "tolerance": 0.005
+      },
+      {
+        "claim_index": 5,
+        "claimed_value": -122.55813953488372,
+        "computed_value": -122.55813953488372,
+        "fact_id": "orders/country=DE/complete_week:2026-08-08/contribution_share_pct",
+        "highlight_index": 3,
+        "status": "bound",
+        "tolerance": 0.05
+      },
+      {
+        "claim_index": 0,
+        "claimed_value": 8454.0,
+        "computed_value": 8454.0,
+        "fact_id": "orders/channel=email/complete_week:2026-08-08/value",
+        "highlight_index": 4,
+        "status": "bound",
+        "tolerance": 0.5
+      },
+      {
+        "claim_index": 1,
+        "claimed_value": 9.253036960454898,
+        "computed_value": 9.253036960454898,
+        "fact_id": "orders/channel=email/complete_week:2026-08-08/wow_pct",
+        "highlight_index": 4,
+        "status": "bound",
+        "tolerance": 0.05
+      },
+      {
+        "claim_index": 2,
+        "claimed_value": 716.0,
+        "computed_value": 716.0,
+        "fact_id": "orders/channel=email/complete_week:2026-08-08/wow_delta",
+        "highlight_index": 4,
+        "status": "bound",
+        "tolerance": 0.5
+      },
+      {
+        "claim_index": 3,
+        "claimed_value": 7129.5,
+        "computed_value": 7129.5,
+        "fact_id": "orders/channel=email/complete_week:2026-08-08/baseline_mean",
+        "highlight_index": 4,
+        "status": "bound",
+        "tolerance": 0.5
+      },
+      {
+        "claim_index": 4,
+        "claimed_value": 2.540688792226984,
+        "computed_value": 2.540688792226984,
+        "fact_id": "orders/channel=email/complete_week:2026-08-08/screening_z",
+        "highlight_index": 4,
+        "status": "bound",
+        "tolerance": 0.005
+      },
+      {
+        "claim_index": 5,
+        "claimed_value": 166.51162790697674,
+        "computed_value": 166.51162790697674,
+        "fact_id": "orders/channel=email/complete_week:2026-08-08/contribution_share_pct",
+        "highlight_index": 4,
+        "status": "bound",
+        "tolerance": 0.05
+      },
+      {
+        "claim_index": 0,
+        "claimed_value": 3.268659325292781,
+        "computed_value": 3.268659325292781,
+        "fact_id": "conversion_rate/country=JP/complete_week:2026-08-08/value",
+        "highlight_index": 5,
+        "status": "bound",
+        "tolerance": 0.005
+      },
+      {
+        "claim_index": 1,
+        "claimed_value": 4.993796281345355,
+        "computed_value": 4.993796281345355,
+        "fact_id": "conversion_rate/country=JP/complete_week:2026-08-08/wow_pct",
+        "highlight_index": 5,
+        "status": "bound",
+        "tolerance": 0.05
+      },
+      {
+        "claim_index": 2,
+        "claimed_value": 0.15546650718193034,
+        "computed_value": 0.15546650718193034,
+        "fact_id": "conversion_rate/country=JP/complete_week:2026-08-08/wow_delta",
+        "highlight_index": 5,
+        "status": "bound",
+        "tolerance": 0.005
+      },
+      {
+        "claim_index": 3,
+        "claimed_value": 3.10844232496045,
+        "computed_value": 3.10844232496045,
+        "fact_id": "conversion_rate/country=JP/complete_week:2026-08-08/baseline_mean",
+        "highlight_index": 5,
+        "status": "bound",
+        "tolerance": 0.005
+      },
+      {
+        "claim_index": 4,
+        "claimed_value": 3.370873406500037,
+        "computed_value": 3.370873406500037,
+        "fact_id": "conversion_rate/country=JP/complete_week:2026-08-08/screening_z",
+        "highlight_index": 5,
+        "status": "bound",
+        "tolerance": 0.005
+      }
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "week_in_review": {
+    "end": "2026-08-08",
+    "start": "2026-08-02"
+  },
+  "writer": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "passed": true,
+        "response_sha256": "4fb18228af99009a641e829757d51eab0b4b16ba67739eba23ff13d62f68212e",
+        "violations": []
+      }
+    ],
+    "model": "deterministic-mock-writer-1",
+    "provider": "mock"
+  }
+}

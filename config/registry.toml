@@ -1,0 +1,89 @@
+# Metric registry -- the plug-in surface of the pipeline.
+#
+# Adding a metric means adding an entry here. No engine change: the compute,
+# statistics, packing, writing and validation layers are metric-agnostic and read
+# everything they need from this file.
+#
+# Fields
+#   id                  stable identifier; appears in every fact id
+#   metric_type         count | rate | continuous  -> selects the statistics path
+#   statistic           count | sum | rate | mean  -> declares additivity
+#   numerator_field     source column summed for the numerator
+#   denominator_field   source column summed for the denominator (ratios only)
+#   unit                usd | percent | count      -> formatting and normalization
+#   display_precision   decimal places; also sets the validator's tolerance
+#   direction           up_is_good | down_is_good  -> narration only, never a gate
+#   required            true -> a failed or stale metric fails the whole run
+#   cuts                dimensions to break the metric down by
+
+schema_version = 2
+
+[[metric]]
+id = "gmv"
+title = "GMV"
+metric_type = "continuous"
+statistic = "sum"
+numerator_field = "gmv"
+n_obs_field = "orders"
+unit = "usd"
+display_precision = 0
+direction = "up_is_good"
+required = true
+cuts = ["country", "channel"]
+
+[[metric]]
+id = "orders"
+title = "Orders"
+metric_type = "count"
+statistic = "count"
+numerator_field = "orders"
+n_obs_field = "orders"
+unit = "count"
+display_precision = 0
+direction = "up_is_good"
+required = true
+cuts = ["country", "channel"]
+
+[[metric]]
+id = "sessions"
+title = "Sessions"
+metric_type = "count"
+statistic = "count"
+numerator_field = "sessions"
+n_obs_field = "sessions"
+unit = "count"
+display_precision = 0
+direction = "up_is_good"
+required = false
+cuts = ["country", "channel"]
+
+[[metric]]
+id = "conversion_rate"
+title = "Conversion rate"
+metric_type = "rate"
+statistic = "rate"
+numerator_field = "orders"
+denominator_field = "sessions"
+n_obs_field = "sessions"
+unit = "percent"
+display_precision = 2
+direction = "up_is_good"
+required = true
+cuts = ["country", "channel"]
+
+# AOV is a mean, so it is deliberately non-additive: the statistics layer refuses
+# to decompose it into per-cut contributions, because cut-level averages do not
+# roll up to the overall average.
+[[metric]]
+id = "aov"
+title = "Average order value"
+metric_type = "continuous"
+statistic = "mean"
+numerator_field = "gmv"
+denominator_field = "orders"
+n_obs_field = "orders"
+unit = "usd"
+display_precision = 2
+direction = "up_is_good"
+required = false
+cuts = ["country", "channel"]
